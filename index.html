@@ -14,10 +14,96 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Pink</title>
   </head>
   <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/images/logo.svg"
+              width="150"
+              height="45"
+              alt="logo"
+              loading="lazy"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto menu">
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="#">Главная </a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="#">Фотографии </a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="#">Конкурс </a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+
+        <div class="header-content col-12 col-sm-6 col-md-3 offset-sm-0   offset-md-1 ">
+          <div class=>
+            <h1 class="header-content__title ">
+            Взгляните на жизнь иначе!
+          </h1>
+        </div>
+        <a href="#" target="_blank" class="btn btn-outline-light header-content__btn">Скачать приложение</a>
+
+        <div class="header-content__available-devices">
+          <ul class="d-flex align-items-center justify-content-around">
+            <li>
+              <a href="#" target="_blank">
+                <img src="images/apple-logo.svg" alt="apple_logo" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="images/android-logo.svg" alt="android_logo" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="images/microsoft-logo.svg" alt="microsoft_logo" />
+              </a>
+            </li>
+          </ul>
+          <p class="header-content__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+        
+        <!-- <div class="header-content__iphone">
+          <img src="images/iphone-6.png" alt="iphone" />
+        </div> -->
+      </div>
+      </div>
+    </header>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
