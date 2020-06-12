@@ -27,12 +27,19 @@
   font-weight: lighter;
   width: 78%;
   margin: 0 auto;
+  margin-top: 120px;
   text-align: center;
 }
 
 .header-content .header-content__btn {
   width: 100%;
+
   margin: 65px 0;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 6px;
 }
 
 .header-content .header-content__description {
