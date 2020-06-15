@@ -23,17 +23,9 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark header__navbar">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img
-              src="/images/logo.svg"
-              width="150"
-              height="45"
-              alt="logo"
-              loading="lazy"
-            />
-          </a>
+          <a class="navbar-brand" href="#"> </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -64,51 +56,53 @@
           </div>
         </div>
       </nav>
-      <div class="row">
-        <div
-          class="header-content col-12 col-lg-3 col-md-4 offset-sm-0 offset-md-1"
-        >
-          <div>
-            <h1 class="header-content__title">
+      <div class="header-phone">
+        <img
+          src="images/iphone-6.png"
+          alt="iphone"
+          class="header-phone__img img-fluid"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="header-content col-xs-12 col-lg-3 col-md-5 offset-sm-0 offset-md-1"
+          >
+            <h1 class="header-content__title d-none d-sm-block">
               Взгляните на жизнь иначе!
             </h1>
-          </div>
-          <a
-            href="#"
-            target="_blank"
-            class="btn btn-outline-light header-content__btn"
-            >Скачать приложение</a
-          >
 
-          <div class="header-content__available-devices">
-            <ul class="d-flex align-items-center justify-content-around">
-              <li>
-                <a href="#" target="_blank">
-                  <img src="images/apple-logo.svg" alt="apple_logo" />
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <img src="images/android-logo.svg" alt="android_logo" />
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <img src="images/microsoft-logo.svg" alt="microsoft_logo" />
-                </a>
-              </li>
-            </ul>
-            <p class="header-content__description">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-outline-light header-content__btn"
+              >Скачать приложение</a
+            >
+
+            <div class="header-content__available-devices">
+              <ul class="d-flex align-items-center justify-content-around">
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="images/apple-logo.svg" alt="apple_logo" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="images/android-logo.svg" alt="android_logo" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="images/microsoft-logo.svg" alt="microsoft_logo" />
+                  </a>
+                </li>
+              </ul>
+              <p class="header-content__description">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
+                8
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="header-phone col-12 col-lg-3 col-md-4">
-          <img
-            src="images/iphone-6.png"
-            alt="iphone"
-            class="header-content__img"
-          />
         </div>
       </div>
     </header>
@@ -125,7 +119,7 @@
               <img src="images/screen1.png" alt="first-phone" />
               <div class="main-content__advantages-description">
                 <h3>Поднимает настроение</h3>
-                <p>
+                <p class="main-content__content">
                   Приложение позволяет вам победить осеннюю хандру и депрессию
                   буквально в несколько кликов!
                 </p>
@@ -135,7 +129,7 @@
               <img src="images/screen2.png" alt="second-phone" />
               <div class="main-content__advantages-description">
                 <h3>Меняет мир вокруг</h3>
-                <p>
+                <p class="main-content__content">
                   Сделайте снимок и украсьте его смайликом или текстовой
                   подписью, чтобы усилить эффект
                 </p>
@@ -145,13 +139,24 @@
               <img src="images/screen3.png" alt="third-phone" />
               <div class="main-content__advantages-description">
                 <h3>Заводит новых друзей</h3>
-                <p>
+                <p class="main-content__content">
                   Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
                   и заводите новых
                 </p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="main-content__footer">
+          <img src="images/timer-24.svg" alt="timer24" />
+
+          <h3>Эффект на 24 часа!</h3>
+          <p class="main-content__content">
+            Британские ученые провели исследования и доказали, что положительный
+            эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </section>

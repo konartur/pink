@@ -2,14 +2,12 @@ html,
 body {
   height: 100%;
 }
-.row {
-  width: 100%;
-}
+
 /* Header */
 .header {
   background-image: url("images/header_background.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .navbar {
@@ -17,6 +15,13 @@ body {
   padding-top: 20px;
   padding-bottom: 35px;
   background: rgba(0, 0, 0, 0.3);
+}
+.navbar-brand {
+  background-image: url("images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 160px;
+  height: 80px;
 }
 .navbar-nav {
   width: 100%;
@@ -33,7 +38,7 @@ body {
 
 .header-content .header-content__title {
   color: #fff;
-  font-size: 50px;
+  font-size: calc(24px + 36 * ((100vw - 320px) / (1280 - 320)));
   font-weight: lighter;
   width: 78%;
   margin: 0 auto;
@@ -59,6 +64,18 @@ body {
   line-height: 1.33;
   margin-top: 65px;
   text-align: center;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+
+.header-phone {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 87.5%;
 }
 
 /*Main-content*/
@@ -94,10 +111,75 @@ h2 {
   color: #283645;
   margin-bottom: 35px;
 }
-.main-content__advantages-description p {
+.main-content__advantages-description .main-content__content {
   font-size: 18px;
   font-weight: 400;
   color: #707983;
   line-height: 1.5;
   text-align: center;
+}
+
+.main-content__footer {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .header-phone {
+    width: 100%;
+  }
+  .navbar {
+    background-color: #283645;
+    text-align: center;
+  }
+  .navbar-nav .menu__item:not(:first-child) {
+    margin-left: 0;
+  }
+  .menu__item {
+    border-top: 1px solid #000000;
+  }
+  .menu__item:last-child {
+    border-bottom: 1px solid #000000;
+  }
+  .header__navbar {
+    padding: 0;
+  }
+  .navbar-brand {
+    background-image: url("images/logotype-tablet.svg");
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #283645;
+    z-index: 2;
+  }
+
+  .header-content .header-content__btn {
+    margin: 40px 0;
+    font-size: 18px;
+  }
+  .header-content {
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-content {
+    background-color: #1d2631;
+  }
+  .header-content__btn {
+    border: 3px solid #ffffff;
+  }
+  .header-content .header-content__description {
+    margin-top: 30px;
+  }
+  .header-phone {
+    position: static;
+    margin-top: auto;
+  }
 }
