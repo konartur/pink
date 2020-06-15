@@ -2,7 +2,10 @@ html,
 body {
   height: 100%;
 }
-
+.row {
+  width: 100%;
+}
+/* Header */
 .header {
   background-image: url("images/header_background.jpg");
   background-repeat: no-repeat;
@@ -57,12 +60,44 @@ body {
   margin-top: 65px;
   text-align: center;
 }
-.header-content {
-  position: relative;
+
+/*Main-content*/
+
+h2 {
+  color: #707983;
+  font-size: 50px;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align: center;
+  margin: 80px 0;
 }
-.header-content__iphone img {
-  position: absolute;
-  left: 170px;
+
+.wrapper {
+  margin: 0 auto;
+  width: 830px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content {
+  background-image: url("images/Shape\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   bottom: 0;
-  left: -170px;
+}
+.main-content__advantages-description h3 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #283645;
+  margin-bottom: 35px;
+}
+.main-content__advantages-description p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #707983;
+  line-height: 1.5;
+  text-align: center;
 }
