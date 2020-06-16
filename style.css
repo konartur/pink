@@ -38,7 +38,8 @@ body {
 
 .header-content .header-content__title {
   color: #fff;
-  font-size: calc(24px + 36 * ((100vw - 320px) / (1280 - 320)));
+  /* font-size: calc(24px + 36 * ((100vw - 320px) / (1280 - 320))); */
+  font-size: 50px;
   font-weight: lighter;
   width: 78%;
   margin: 0 auto;
@@ -98,12 +99,12 @@ h2 {
   justify-content: space-between;
 }
 .main-content {
-  background-image: url("images/Shape\ 2.jpg");
+  /* background-image: url("images/Shape\ 2.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 0;
 }
-.main-content__advantages-description h3 {
+.main-content__title-advantages {
   font-size: 30px;
   font-weight: bold;
   line-height: 1;
@@ -111,18 +112,40 @@ h2 {
   color: #283645;
   margin-bottom: 35px;
 }
-.main-content__advantages-description .main-content__content {
+
+.main-content__text {
+  text-align: center;
+}
+
+.main-content__text,
+.main-content__footer-text {
   font-size: 18px;
   font-weight: 400;
   color: #707983;
   line-height: 1.5;
-  text-align: center;
 }
 
 .main-content__footer {
   display: flex;
   justify-content: space-between;
+  margin-top: 70px;
 }
+
+.main-content__timer {
+  width: 31%;
+}
+
+.main-content__timer-text {
+  width: 55%;
+}
+
+.main-content__link {
+  text-decoration: underline;
+  color: #db5e80;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 991px) {
   .header-phone {
     width: 100%;
@@ -154,7 +177,9 @@ h2 {
     background-color: #283645;
     z-index: 2;
   }
-
+  .header-content__title {
+    font-size: 40px;
+  }
   .header-content .header-content__btn {
     margin: 40px 0;
     font-size: 18px;
