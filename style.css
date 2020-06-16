@@ -167,6 +167,15 @@ body {
   transform: rotate(-5deg);
 }
 
+/* reviews*/
+.reviews__quotes {
+  display: flex;
+  align-items: center;
+}
+.reviews__quotes img {
+  margin: 40px auto;
+}
+
 /* Slider */
 .slider {
   position: relative;
@@ -281,6 +290,22 @@ body {
 
 .slider__indicators li.active {
   background-color: #fff;
+}
+
+.slider__comment {
+  color: #000;
+  text-align: center;
+}
+
+.slider__author {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.slider__author-description {
+  text-align: center;
+  margin: 0;
 }
 
 @media screen and (max-width: 991px) {
