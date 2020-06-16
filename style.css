@@ -81,13 +81,14 @@ body {
 
 /*Main-content*/
 
-h2 {
+.main-content__title {
   color: #707983;
   font-size: 50px;
   font-weight: lighter;
   line-height: 1.5;
   text-align: center;
-  margin: 80px 0;
+  margin: 80px auto;
+  width: 70%;
 }
 
 .wrapper {
@@ -98,12 +99,7 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.main-content {
-  /* background-image: url("images/Shape\ 2.jpg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-}
+
 .main-content__title-advantages {
   text-align: center;
 }
@@ -149,7 +145,27 @@ h2 {
   font-size: 18px;
   font-weight: 400;
 }
+/*main-content background */
+.main-content {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #f2f2f2;
+}
 
+.main-content:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 76%;
+  top: -50%;
+  left: -50%;
+
+  z-index: -1;
+  background-color: #fff;
+
+  transform: rotate(-5deg);
+}
 @media screen and (max-width: 991px) {
   .header-phone {
     width: 100%;
