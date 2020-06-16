@@ -105,10 +105,13 @@ h2 {
   bottom: 0;
 }
 .main-content__title-advantages {
+  text-align: center;
+}
+.main-content__title-advantages,
+.main-content__footer-title {
   font-size: 30px;
   font-weight: bold;
   line-height: 1;
-  text-align: center;
   color: #283645;
   margin-bottom: 35px;
 }
@@ -137,6 +140,7 @@ h2 {
 
 .main-content__timer-text {
   width: 55%;
+  margin: auto 0;
 }
 
 .main-content__link {
