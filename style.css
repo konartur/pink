@@ -127,7 +127,7 @@ body {
 .main-content__footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin: 70px 0;
 }
 
 .main-content__timer {
@@ -315,12 +315,29 @@ body {
 
 .table .table__th {
   vertical-align: middle;
-  white-space: pre-wrap;
+  text-align: center;
   font-size: 18px;
   font-weight: lighter;
   text-transform: uppercase;
-  word-break: break-all;
 }
+.table .table__th:nth-child(3) {
+  position: relative;
+}
+.table .table__th:nth-child(3)::before {
+  display: block;
+  content: "ХИТ";
+  background-color: #d22856;
+  font-size: 14px;
+  position: absolute;
+  height: 25px;
+  width: 35%;
+  top: 10px;
+  left: -30px;
+  transform: rotate(-45deg);
+}
+
+}
+
 .table .table__th span {
   font-weight: 500;
 }
