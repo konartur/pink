@@ -308,6 +308,43 @@ body {
   margin: 0;
 }
 
+/* Table */
+.table {
+  margin-top: 200px;
+}
+
+.table .table__th {
+  vertical-align: middle;
+  white-space: pre-wrap;
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+.table .table__th span {
+  font-weight: 500;
+}
+.table .table__th:last-child {
+  text-align: center;
+}
+
+.table__th:first-child {
+  visibility: hidden;
+}
+.table__hidden-border {
+  position: relative;
+}
+.table__hidden-border::before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #dee2e6;
+  left: 0;
+  bottom: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .header-phone {
     width: 100%;
