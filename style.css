@@ -180,7 +180,7 @@ body {
 .slider {
   position: relative;
   overflow: hidden;
-  max-width: 600px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -195,6 +195,7 @@ body {
 .slider__items {
   display: flex;
   transition: transform 0.7s ease;
+ 
 }
 
 /* стили для слайдов */
@@ -211,12 +212,12 @@ body {
   align-items: center;
   justify-content: center;
   width: 40px;
-  color: #fff;
+  color: #8f8f8f;
   text-align: center;
-  opacity: 0.5;
+  opacity: 1;
   height: 50px;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background:#fff;
 }
 
 .slider__control_show {
@@ -242,18 +243,18 @@ body {
 .slider__control::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
 }
 
 .slider__control_prev::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("images/prev_arrow.svg");
 }
 
 .slider__control_next::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: url("images/next__arrow.svg");
 }
 
 /* стили для индикаторов */
@@ -295,6 +296,7 @@ body {
 .slider__comment {
   color: #000;
   text-align: center;
+  white-space: pre-wrap ;
 }
 
 .slider__author {
@@ -307,6 +309,7 @@ body {
   text-align: center;
   margin: 0;
 }
+
 
 /* Table */
 .table {
