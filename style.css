@@ -157,7 +157,8 @@ body {
   font-weight: 400;
 }
 /*main-content background */
-.main-content {
+.main-content,
+.reviews {
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -179,6 +180,19 @@ body {
 }
 
 /* reviews*/
+.reviews::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 76%;
+  top: -25%;
+  left: -50%;
+
+  z-index: -1;
+  background-color: #fff;
+
+  transform: rotate(-5deg);
+}
 .reviews__quotes {
   display: flex;
   align-items: center;
@@ -323,6 +337,7 @@ body {
 /* Table */
 .table {
   margin-top: 200px;
+  margin-bottom: 100px;
 }
 
 .table .table__th {
@@ -353,7 +368,6 @@ body {
 .table__custom-vector {
   position: relative;
   font-size: 2em;
-  /* padding-left: 70px; */
 }
 
 .table__custom-vector::before {
