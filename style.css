@@ -452,7 +452,10 @@ body {
   color: #e77694;
   font-size: 20px;
 }
-
+.footer__map {
+  padding-left: 0;
+  padding-right: 0;
+}
 @media screen and (max-width: 991px) {
   .header-phone {
     width: 100%;
