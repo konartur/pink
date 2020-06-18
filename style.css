@@ -456,6 +456,11 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+.footer__feedback {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 991px) {
   .header-phone {
     width: 100%;
