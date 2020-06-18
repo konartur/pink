@@ -81,7 +81,8 @@ body {
 
 /*Main-content*/
 
-.main-content__title {
+.main-content__title,
+.footer__title {
   color: #707983;
   font-size: 50px;
   font-weight: lighter;
@@ -429,6 +430,27 @@ body {
   background: #dee2e6;
   left: 0;
   bottom: 100%;
+}
+
+/* Footer */
+.footer__title {
+  width: 50%;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contact-title,
+.footer__footer-phone {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer__phone {
+  color: #e77694;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 991px) {
