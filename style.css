@@ -414,10 +414,10 @@ body {
 .table .table__th:last-child {
   text-align: center;
 }
-
-.table__th:first-child {
-  visibility: hidden;
+.table .table__th:first-child {
+  border-bottom: 0;
 }
+
 .table__hidden-border {
   position: relative;
 }
@@ -453,9 +453,11 @@ body {
   font-size: 20px;
 }
 .footer__map {
+  clip-path: polygon(50% 40%, 100% 0, 100% 100%, 0 100%, 0 0);
   padding-left: 0;
   padding-right: 0;
 }
+
 .footer__feedback {
   display: flex;
   justify-content: space-between;
@@ -510,6 +512,18 @@ body {
   }
   .header-content {
     z-index: 1;
+  }
+  .main-content__title-advantages,
+  .main-content__text {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .main-content__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .main-content__text:last-child {
+    margin: 0;
   }
 }
 
