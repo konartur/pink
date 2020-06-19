@@ -463,6 +463,13 @@ body {
   height: 200px;
 }
 
+.footer__copyright-text {
+  float: left;
+  margin: auto 15px auto 0;
+}
+.footer__copyright-logo {
+  float: right;
+}
 @media screen and (max-width: 991px) {
   .header-phone {
     width: 100%;
