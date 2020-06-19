@@ -459,6 +459,8 @@ body {
 .footer__feedback {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 200px;
 }
 
 @media screen and (max-width: 991px) {
