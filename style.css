@@ -514,6 +514,9 @@ body {
   .header-content {
     z-index: 1;
   }
+  .main-content:before {
+    top: -25%;
+  }
   .main-content__title-advantages,
   .main-content__text {
     font-size: 15px;
