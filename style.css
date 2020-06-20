@@ -142,11 +142,6 @@ body {
   margin: 70px 0;
 }
 
-.main-content__timer img {
-  display: block;
-  width: 0 auto;
-}
-
 .main-content__timer-text {
   width: 55%;
   margin: auto 0;
@@ -527,7 +522,11 @@ body {
     margin-bottom: 20px;
   }
   .main-content__text:last-child {
-    margin: 0;
+    margin: 0 auto;
+  }
+  .main-content__footer-title {
+    width: 50%;
+    line-height: 1.3;
   }
 }
 
