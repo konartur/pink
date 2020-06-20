@@ -108,9 +108,6 @@ body {
   margin: 70px auto;
 }
 
-.main-content__title-advantages {
-  text-align: center;
-}
 .main-content__title-advantages,
 .main-content__footer-title {
   font-size: 30px;
@@ -119,9 +116,11 @@ body {
   color: #283645;
   margin-bottom: 35px;
 }
-
-.main-content__text {
+.main-content__title-advantages {
   text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .main-content__text,
@@ -130,6 +129,12 @@ body {
   font-weight: 400;
   color: #707983;
   line-height: 1.5;
+}
+
+.main-content__text {
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .main-content__footer {
