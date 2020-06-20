@@ -1,2 +1,24 @@
 /preview
+
+# System Files
 .DS_Store
+<<<<<<< HEAD
+=======
+Thumbs.db
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+>>>>>>> e36c5b2288ad15116a1b1b3a5fd1f6dad284bcea
