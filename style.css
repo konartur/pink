@@ -509,6 +509,7 @@ body {
   .header-content {
     z-index: 1;
   }
+
   .main-content:before {
     top: -25%;
   }
