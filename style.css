@@ -129,6 +129,7 @@ body {
   font-weight: 400;
   color: #707983;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .main-content__text {
@@ -138,13 +139,12 @@ body {
 }
 
 .main-content__footer {
-  display: flex;
-  justify-content: space-between;
   margin: 70px 0;
 }
 
-.main-content__timer {
-  width: 31%;
+.main-content__timer img {
+  display: block;
+  width: 0 auto;
 }
 
 .main-content__timer-text {
