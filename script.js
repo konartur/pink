@@ -1,15 +1,20 @@
 $(document).ready(function () {
-  //initialize swiper when document ready
-  var mySwiper = new Swiper(".swiper-container", {
+  new Swiper(".slider-comments", {
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination-comments",
     },
 
-    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    loop: true,
+  });
+  new Swiper(".slider-table", {
+    pagination: {
+      el: ".swiper-pagination-table",
+    },
+
     loop: true,
   });
 });
