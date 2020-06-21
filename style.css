@@ -199,121 +199,14 @@ body {
 }
 
 /* Slider */
-.slider {
-  position: relative;
-  overflow: hidden;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f2f2f2;
 }
-
-/* стили для обёртки, в которой заключены слайды */
-.slider__wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-/* стили для контейнера слайдов */
-.slider__items {
-  display: flex;
-  transition: transform 0.7s ease;
-}
-
-/* стили для слайдов */
-.slider__item {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-/* стили для кнопок "вперед" и "назад" */
-.slider__control {
-  position: absolute;
-  top: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  color: #8f8f8f;
-  text-align: center;
-  opacity: 1;
-  height: 50px;
-  transform: translateY(-50%);
-  background: #fff;
-}
-
-.slider__control_show {
-  display: flex;
-}
-
-.slider__control:hover,
-.slider__control:focus {
-  color: rgb(254, 255, 251);
-  text-decoration: none;
-  outline: 0;
-  opacity: 0.9;
-}
-
-.slider__control_prev {
-  left: 0;
-}
-
-.slider__control_next {
-  right: 0;
-}
-
-.slider__control::before {
-  content: "";
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.slider__control_prev::before {
-  background-image: url("images/prev_arrow.svg");
-}
-
-.slider__control_next::before {
-  background-image: url("images/next__arrow.svg");
-}
-
-/* стили для индикаторов */
-.slider__indicators {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.slider__indicators li {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 4px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-clip: padding-box;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
-
-.slider__indicators li.active {
+.swiper-pagination-bullet-active {
   background-color: #fff;
+  border: 2px solid #000;
 }
-
 .slider__comment {
   color: #000;
   text-align: center;
