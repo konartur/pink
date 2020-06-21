@@ -578,4 +578,29 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .main-content__footer {
+    display: none;
+  }
+  .reviews::before {
+    top: -40%;
+  }
+  .slider {
+    margin-top: 50px;
+  }
+  .slider__comment {
+    white-space: initial;
+    margin-top: 35px;
+  }
+  .slider__indicators {
+    bottom: -10px;
+  }
+  .slider__indicators li {
+    background-color: #f2f2f2;
+
+    width: 10px;
+    height: 10px;
+  }
+  .slider__indicators li.active {
+    background-color: #283645;
+  }
 }
