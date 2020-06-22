@@ -18,8 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
 
     <link rel="stylesheet" href="style.css" />
+
     <title>Pink</title>
   </head>
   <body>
@@ -276,75 +279,70 @@
 
     <section class="reviews">
       <div class="container">
-        <div class="reviews__quotes d-none d-md-flex">
+        <div class="reviews__quotes d-none d-lg-flex">
           <img src="images/quotes.svg" alt="quotes" />
         </div>
-        <div class="slider">
-          <div class="slider__wrapper slider__width">
-            <div class="slider__items">
-              <div class="slider__item">
+        <div class="slider-comments swiper-container">
+          <div class="slider__wrapper slider__width swiper-wrapper">
+            
+              <div class="slider__item swiper-slide">
                 <h4 class="slider__author d-md-none">Николай Петров</h4>
                 <p class="slider__comment">
-                  Это приложение перевернуло мой мир и позволило по-новому
+                  &laquo;Это приложение перевернуло мой мир и позволило по-новому
                   взглянуть на привычные серые вещи! А еще я познакомился со
-                  своей будущей женой в комментариях к выложенной фотографии!
+                  своей будущей женой в комментариях к выложенной фотографии!&#187;
                 </p>
-                <h4 class="slider__author d-none d-md-flex">Николай Петров</h4>
-                <p class="slider__author-description d-none d-md-flex">
+                <h4 class="slider__author d-none d-md-flex justify-content-center">Николай Петров</h4>
+                <p class="slider__author-description d-none d-md-flex justify-content-center">
                   25 лет, водитель трамвая
                 </p>
               </div>
-              <div class="slider__item">
+              <div class="slider__item swiper-slide">
                 <h4 class="slider__author d-md-none">Николай Петров</h4>
                 <p class="slider__comment">
-                  Это приложение перевернуло мой мир и позволило по-новому
+                  &laquo;Это приложение перевернуло мой мир и позволило по-новому
                   взглянуть на привычные серые вещи! А еще я познакомился со
-                  своей будущей женой в комментариях к выложенной фотографии!
+                  своей будущей женой в комментариях к выложенной фотографии!&#187;
                 </p>
-                <h4 class="slider__author d-none d-md-flex">Николай Петров</h4>
-                <p class="slider__author-description d-none d-md-flex">
+
+                  <h4 class="slider__author d-none d-md-flex justify-content-center">Николай Петров</h4>
+                  <p class="slider__author-description d-none d-md-flex justify-content-center">
+                    25 лет, водитель трамвая
+                  </p>
+                
+              </div>
+              <div class="slider__item swiper-slide">
+                <h4 class="slider__author d-md-none">Николай Петров</h4>
+                <p class="slider__comment">
+                  &laquo;Это приложение перевернуло мой мир и позволило по-новому
+                  взглянуть на привычные серые вещи! А еще я познакомился со
+                  своей будущей женой в комментариях к выложенной фотографии!&#187;
+                </p>
+                <h4 class="slider__author d-none d-md-flex justify-content-center">Николай Петров</h4>
+                <p class="slider__author-description d-none d-md-flex justify-content-center">
                   25 лет, водитель трамвая
                 </p>
               </div>
-              <div class="slider__item">
+              <div class="slider__item swiper-slide">
                 <h4 class="slider__author d-md-none">Николай Петров</h4>
                 <p class="slider__comment">
-                  Это приложение перевернуло мой мир и позволило по-новому
+                  &laquo;Это приложение перевернуло мой мир и позволило по-новому
                   взглянуть на привычные серые вещи! А еще я познакомился со
-                  своей будущей женой в комментариях к выложенной фотографии!
+                  своей будущей женой в комментариях к выложенной фотографии!&#187;
                 </p>
-                <h4 class="slider__author d-none d-md-flex">Николай Петров</h4>
-                <p class="slider__author-description d-none d-md-flex">
+                <h4 class="slider__author d-none d-md-flex justify-content-center">Николай Петров</h4>
+                <p class="slider__author-description d-none d-md-flex justify-content-center">
                   25 лет, водитель трамвая
                 </p>
               </div>
-              <div class="slider__item">
-                <h4 class="slider__author d-md-none">Николай Петров</h4>
-                <p class="slider__comment">
-                  Это приложение перевернуло мой мир и позволило по-новому
-                  взглянуть на привычные серые вещи! А еще я познакомился со
-                  своей будущей женой в комментариях к выложенной фотографии!
-                </p>
-                <h4 class="slider__author d-none d-md-flex">Николай Петров</h4>
-                <p class="slider__author-description d-none d-md-flex">
-                  25 лет, водитель трамвая
-                </p>
-              </div>
-            </div>
+            
           </div>
-          <a
-            class="slider__control slider__control_prev"
-            href="#"
-            role="button"
-          ></a>
-          <a
-            class="slider__control slider__control_next"
-            href="#"
-            role="button"
-          ></a>
+          <div class="swiper-button-prev d-none d-lg-block"></div>
+          <div class="swiper-button-next d-none d-lg-block"></div>
+          <div class="swiper-pagination-comments d-lg-none"></div>
         </div>
 
-        <table class="table table-bordered">
+        <table class="table table-bordered d-none d-md-table">
           <thead class="thead-dark">
             <tr>
               <th scope="col" class="table__th invisible"></th>
@@ -383,6 +381,75 @@
             </tr>
           </tbody>
         </table>
+        
+        <div class="swiper-container slider-table d-md-none">
+          <div class="swiper-wrapper slider__width">
+            
+              <div class="swiper-slide swiper-slide">
+                <div class="table-slider__col">
+                  <div class="table-slider-row">
+                    <h6>База</h6> 
+                    <p>1,99 USD</p>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Розовый фильтр</p>
+                    <span class="table__custom-vector"></span>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Смайлики</p>
+                    <span class="table__cross-off"></span>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Комментарии</p>
+                    <span class="table__cross-off"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide">
+                <div class="table-slider__col">
+                  <div class="table-slider-row">
+                    <h6>Стандарт</h6> 
+                    <p>3,99 USD</p>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Розовый фильтр</p>
+                    <span class="table__custom-vector"></span>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Смайлики</p>
+                    <span class="table__custom-vector"></span>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Комментарии</p>
+                    <span class="table__cross-off"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide">
+                  <div class="table-slider__col">
+                  <div class="table-slider-row">
+                    <h6>Анлим</h6> 
+                    <p>9,99 USD</p>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Розовый фильтр</p>
+                    <span class="table__custom-vector"></span>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Смайлики</p>
+                    <span class="table__custom-vector"></span>
+                  </div>
+                  <div class="table-slider-row">
+                    <p>Комментарии</p>
+                    <span class="table__custom-vector"></span>
+                  </div>
+                </div>
+              </div>
+             
+            
+          </div>
+          <div class="swiper-pagination-table"></div>
+        </div>
       </div>
     </section>
 
@@ -468,6 +535,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
