@@ -531,4 +531,17 @@ body {
     height: 280px;
     width: 160px;
   }
+  .reviews::before {
+    top: -5%;
+  }
+  .slider__wrapper {
+    transform: none;
+  }
+  .slider__author {
+    margin-top: 50px;
+  }
+  .slider__comment {
+    margin: 30px auto;
+    line-height: 2;
+  }
 }
