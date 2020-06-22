@@ -482,6 +482,10 @@ body {
   .main-content__footer {
     display: none;
   }
+  .main-content__tablet img {
+    width: 100%;
+    margin-bottom: -5px;
+  }
   .reviews::before {
     top: -40%;
   }
