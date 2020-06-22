@@ -485,6 +485,9 @@ body {
   .reviews::before {
     top: -40%;
   }
+  .swiper-container {
+    transform: scale(1.00999);
+  }
   .slider {
     margin-top: 50px;
   }
@@ -534,8 +537,8 @@ body {
   .reviews::before {
     top: -5%;
   }
-  .slider__wrapper {
-    transform: none;
+  .swiper-container {
+    transform: scale(0.999);
   }
   .slider__author {
     margin-top: 50px;
