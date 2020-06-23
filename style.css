@@ -629,4 +629,10 @@ body {
   .swiper-pagination-table {
     margin: 40px auto;
   }
+  /*  Footer */
+  .footer__title {
+    font-size: 24px;
+    margin: 30px auto;
+    width: 100%;
+  }
 }
