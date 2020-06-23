@@ -514,6 +514,12 @@ body {
   .table .table__custom-th::before {
     width: 55%;
   }
+  .footer__title {
+    width: 70%;
+  }
+  .footer__map {
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
 }
 @media screen and (max-width: 576px) {
   .header {
@@ -538,11 +544,9 @@ body {
     width: 160px;
   }
   .reviews::before {
-    top: -5%;
+    top: -35%;
   }
-  .swiper-container {
-    transform: scale(0.99999);
-  }
+
   .slider__author {
     margin-top: 50px;
   }
@@ -552,7 +556,7 @@ body {
   }
   /* Slider for Table */
   .slider-table {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   .swiper-pagination-comments {
@@ -560,7 +564,7 @@ body {
   }
   .swiper-slide__th {
     background-color: #283645;
-    height: auto;
+    position: relative;
     text-align: center;
     color: #fff;
 
@@ -570,13 +574,33 @@ body {
     border-right: 2px solid #e5e5e5;
   }
 
+  .table-slider__stock-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .table-slider__stock-item::before {
+    display: block;
+    content: "ХИТ";
+    background-color: #d22856;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    height: 30px;
+    width: 35%;
+    top: 10px;
+    left: -30px;
+
+    transform: rotate(-45deg);
+  }
+
   .swiper-slide__th h6,
   .swiper-slide__th p {
     font-size: 30px;
     margin: 0;
   }
-  .table-slider-row {
+  .table-slider-row:not(:first-child) {
     position: relative;
+    background-color: #fff;
   }
   .table-slider-row:not(:first-child)::after {
     display: block;
@@ -610,5 +634,27 @@ body {
 
   .swiper-pagination-table {
     margin: 40px auto;
+  }
+  /*  Footer */
+  .footer__title {
+    font-size: 24px;
+    margin: 30px auto;
+    width: 100%;
+  }
+  .footer__phone {
+    text-align: center;
+  }
+  .footer__phone:first-child {
+    order: 1;
+  }
+  .footer__phone:last-child {
+    order: 3;
+  }
+  .footer__map {
+    clip-path: polygon(50% 18%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+  .footer__feedback {
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
