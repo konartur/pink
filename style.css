@@ -514,6 +514,12 @@ body {
   .table .table__custom-th::before {
     width: 55%;
   }
+  .footer__title {
+    width: 70%;
+  }
+  .footer__map {
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
 }
 @media screen and (max-width: 576px) {
   .header {
