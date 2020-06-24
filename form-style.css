@@ -7,8 +7,7 @@
 
 .navbar {
   padding: 0;
-  
-  
+
   background-color: #283645;
 }
 .navbar-brand {
@@ -23,6 +22,12 @@
   justify-content: flex-end;
 }
 
+.header__title h1 {
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+}
 
 .navbar-nav.menu .menu__item a {
   color: #fff;
@@ -31,15 +36,19 @@
 
 @media screen and (max-width: 991px) {
   .navbar-brand {
-      background-image: url('images/logotype-tablet.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 160px;
-      height: 80px;
+    background-image: url("images/logotype-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 160px;
+    height: 80px;
   }
   .menu__item {
-      border-top: 1px solid #000;
-      text-align: center;
+    border-top: 1px solid #000;
+    text-align: center;
   }
+}
+@media screen and (max-width: 576px) {
+  .header__title {
+    padding: 35px 30px 50px 30px;
   }
 }
