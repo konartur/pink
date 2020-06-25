@@ -65,13 +65,14 @@
         <h2 class="main-content__title">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000
           миль на вашу бонусную карту!
+
           <span class="main-content__title-block d-none d-md-block"
             >Пожалуйста, заполните форму ниже:</span
           >
         </h2>
 
-        <form action="" class="main-content__forms">
-          <div class="main-content__user-form">
+        <form action="" class="main-content__forms row">
+          <div class="main-content__user-form col-lg-6">
             <div class="form-group">
               <label for="First-Name" class="main-content__custom-label"
                 >Фамилия:</label
@@ -104,6 +105,48 @@
                 id="Last-Name"
                 placeholder="Ну и отчество тоже"
               />
+            </div>
+          </div>
+          <div class="main-content__apps-check col-lg-6">
+            <h3 class="main-content__check-title">
+              С каким приложением путешествовали?
+            </h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="iOS-check"
+                value="option1"
+                checked
+              />
+              <label class="form-check-label" for="iOS-check">
+                Pink для iOS
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="Android-check"
+                id="exampleRadios2"
+                value="option2"
+              />
+              <label class="form-check-label" for="exampleRadios2">
+                Pink для Android
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="Win-check"
+                value="option3"
+              />
+              <label class="form-check-label" for="Win-check">
+                Windows Phone
+              </label>
             </div>
           </div>
         </form>

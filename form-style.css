@@ -43,6 +43,10 @@
   white-space: nowrap;
 }
 /* Main-content Forms */
+.main-content__user-form,
+.main-content__apps-check {
+  margin-top: 80px;
+}
 .main-content__title,
 .main-content__title-block {
   width: 100%;
@@ -50,7 +54,12 @@
   color: #616c77;
   text-align: center;
 }
-.main-content__custom-label {
+.main-content__title {
+  margin-top: 100px;
+}
+.main-content__custom-label,
+.main-content__check-title {
+  font-size: 14px;
   color: #de6183;
   text-transform: uppercase;
 }
@@ -59,10 +68,25 @@
   border-radius: 0em;
   height: 60px;
 }
+.form-check {
+  width: 50%;
+  margin: 50px auto;
+}
+.form-check-label {
+  font-size: 18px;
+}
+
 input[placeholder]::-webkit-input-placeholder {
   color: #45515e;
 }
-
+.main-content__apps-check {
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  max-height: 306px;
+}
+.main-content__check-title {
+  text-align: center;
+}
 @media screen and (max-width: 991px) {
   .navbar-brand {
     background-image: url("images/logotype-tablet.svg");
@@ -127,15 +151,22 @@ input[placeholder]::-webkit-input-placeholder {
   .main-content__title {
     font-size: 14px;
     line-height: 1.5;
-    margin-top: 55px;
   }
   .main-content__user-form {
-    margin-top: 50px;
+    margin-top: 55px;
+  }
+  .form-group {
+    margin-top: 0;
   }
 
   .main-content__custom-label {
     font-size: 14px;
     font-weight: 500;
     margin-left: 25px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .main-content__custom-input {
+    width: 100%;
   }
 }
