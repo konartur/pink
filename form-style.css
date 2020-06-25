@@ -42,7 +42,75 @@
   color: #fff;
   white-space: nowrap;
 }
+/* Main-content Forms */
+.main-content__user-form,
+.main-content__apps-check {
+  margin-top: 80px;
+}
+.main-content__title,
+.main-content__title-block {
+  width: 100%;
+  margin: 0 auto;
+  color: #616c77;
+  text-align: center;
+}
+.main-content__title {
+  margin-top: 100px;
+}
+.main-content__custom-label,
+.main-content__check-title {
+  font-size: 14px;
+  color: #de6183;
+  text-transform: uppercase;
+}
+.main-content__custom-input {
+  border: 2px solid #e5e5e5;
+  border-radius: 0em;
+  height: 60px;
+}
+.form-check {
+  width: 50%;
+  margin: 50px auto;
+}
+.form-check-label {
+  font-size: 18px;
+}
 
+input[placeholder]::-webkit-input-placeholder {
+  color: #45515e;
+}
+.main-content__apps-check {
+  position: relative;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  max-height: 306px;
+}
+.main-content__apps-check::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #e5e5e5;
+}
+.main-content__apps-check::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #e5e5e5;
+}
+.main-content__check-title {
+  position: absolute;
+  top: -5px;
+  left: 80px;
+  text-align: center;
+}
 @media screen and (max-width: 991px) {
   .navbar-brand {
     background-image: url("images/logotype-tablet.svg");
@@ -72,12 +140,57 @@
   .header__title h1 {
     font-size: 50px;
   }
+  /* Main-content Forms */
+  .main-content__title,
+  .main-content__title-block {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 100px;
+    width: 70%;
+  }
+  .main-content__title-block {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .form-group {
+    margin-top: 50px;
+  }
+  .main-content__custom-label {
+    padding: 15px 0;
+  }
+  .main-content__custom-input {
+    width: 85%;
+    float: right;
+  }
+  .custom-label__width {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .header__title {
-  }
   .header__title h1 {
     font-size: 24px;
+  }
+  /* Main-content Forms */
+  .main-content__title {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .main-content__user-form {
+    margin-top: 55px;
+  }
+  .form-group {
+    margin-top: 0;
+  }
+
+  .main-content__custom-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .main-content__custom-input {
+    width: 100%;
   }
 }
