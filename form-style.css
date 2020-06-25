@@ -81,37 +81,12 @@ input[placeholder]::-webkit-input-placeholder {
   color: #45515e;
 }
 .main-content__apps-check {
-  position: relative;
   border: 2px solid #e5e5e5;
-  border-top: none;
   max-height: 306px;
 }
-.main-content__apps-check::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: #e5e5e5;
-}
-.main-content__apps-check::after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 2px;
-  background-color: #e5e5e5;
-}
+
 .main-content__check-title {
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
+  text-align: center;
 }
 @media screen and (max-width: 991px) {
   .navbar-brand {
