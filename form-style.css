@@ -42,9 +42,9 @@
   color: #fff;
   white-space: nowrap;
 }
-/* Main-content Forms */
-.main-content__user-form,
-.main-content__apps-check {
+/* Forms */
+.main-content-forms__user-form,
+.main-content-fieldset__apps-check {
   margin-top: 80px;
 }
 .main-content__title,
@@ -57,13 +57,13 @@
 .main-content__title {
   margin-top: 100px;
 }
-.main-content__custom-label,
-.main-content__check-title {
+.main-content-forms__custom-label,
+.main-content-fieldset__title {
   font-size: 14px;
   color: #de6183;
   text-transform: uppercase;
 }
-.main-content__custom-input {
+.main-content-forms__custom-input {
   border: 2px solid #e5e5e5;
   border-radius: 0em;
   height: 60px;
@@ -80,12 +80,12 @@
 input[placeholder]::-webkit-input-placeholder {
   color: #45515e;
 }
-.main-content__apps-check {
+.main-content-fieldset__apps-check {
   border: 2px solid #e5e5e5;
   max-height: 306px;
 }
 
-.main-content__check-title {
+.main-content-fieldset__title {
   text-align: center;
   width: 90%;
 }
@@ -133,10 +133,10 @@ input[placeholder]::-webkit-input-placeholder {
   .form-group {
     margin-top: 50px;
   }
-  .main-content__custom-label {
+  .main-content-forms__custom-label {
     padding: 15px 0;
   }
-  .main-content__custom-input {
+  .main-content-forms__custom-input {
     width: 85%;
     float: right;
   }
@@ -161,14 +161,14 @@ input[placeholder]::-webkit-input-placeholder {
     margin-top: 0;
   }
 
-  .main-content__custom-label {
+  .main-content-forms__custom-label {
     font-size: 14px;
     font-weight: 500;
     margin-left: 25px;
     margin-bottom: 0;
     width: 100%;
   }
-  .main-content__custom-input {
+  .main-content-forms__custom-input {
     width: 100%;
   }
 }
