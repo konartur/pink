@@ -87,6 +87,7 @@ input[placeholder]::-webkit-input-placeholder {
 
 .main-content__check-title {
   text-align: center;
+  width: 90%;
 }
 @media screen and (max-width: 991px) {
   .navbar-brand {
