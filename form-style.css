@@ -42,7 +42,14 @@
   color: #fff;
   white-space: nowrap;
 }
+
 /* Forms */
+.main-content__container {
+  max-width: 75%;
+}
+.main-content-forms__user-form {
+  padding-right: 70px;
+}
 .main-content-forms__user-form,
 .main-content-fieldset__apps-check {
   margin-top: 80px;
