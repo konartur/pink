@@ -148,17 +148,20 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="fieldset main-content-fieldset__contact-information">
+          <fieldset
+            class="fieldset main-content-fieldset__contact-information row"
+          >
             <legend class="main-content-fieldset__title fieldset-title-custom">
               Контактная информация
             </legend>
-            <div class="input-group mb-3">
+            <div class="input-group main-content-fieldset__item">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Номер, пожалуйста"
                 aria-label="Номер, пожалуйста"
                 aria-describedby="basic-addon2"
+                id="label-phone"
               />
               <div class="input-group-append">
                 <span
@@ -167,15 +170,20 @@
                   ><img src="images/phone-contacts__phone.svg" alt="Phone"
                 /></span>
               </div>
-              <p class="main-content-fielset__contact-label">Номер телефона</p>
+              <label
+                for="label-phone"
+                class="main-content-forms__custom-label main-content-fieldset__custom-label"
+                >Номер телефона</label
+              >
             </div>
-            <div class="input-group mb-3">
+            <div class="input-group main-content-fieldset__item">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Введите почту *"
                 aria-label="Введите почту *"
                 aria-describedby="basic-addon2"
+                id="email-label"
               />
               <div class="input-group-append">
                 <span
@@ -184,7 +192,12 @@
                   ><img src="images/phone-contacts__email.svg" alt="Email"
                 /></span>
               </div>
-              <p class="main-content-fielset__contact-label">Адрес почты</p>
+
+              <label
+                for="email-label"
+                class="main-content-forms__custom-label main-content-fieldset__custom-label"
+                >Адрес почты</label
+              >
             </div>
           </fieldset>
         </form>

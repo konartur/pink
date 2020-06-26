@@ -137,10 +137,16 @@ input[placeholder]::-webkit-input-placeholder {
   width: 100%;
 }
 .fieldset-title-custom {
-  width: 30%;
+  width: 40%;
 }
-.main-content-fieldset__span {
-  height: 95%;
+.main-content-fieldset__item {
+  margin-top: 45px;
+  margin-left: 60px;
+  width: 35%;
+}
+.main-content-fieldset__custom-label {
+  width: 100%;
+  margin: 15px;
 }
 @media screen and (max-width: 991px) {
   .navbar-brand {
