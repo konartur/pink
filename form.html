@@ -72,7 +72,7 @@
         </h2>
 
         <form action="" class="main-content__forms row">
-          <div class="main-content-forms__user-form col-lg-6">
+          <div class="main-content-forms__user-form col-12 col-lg-6">
             <div class="form-group">
               <label for="FirstName" class="main-content-forms__custom-label"
                 >Фамилия:</label
@@ -108,9 +108,14 @@
             </div>
           </div>
           <fieldset class="fieldset main-content-fieldset__apps-check col-lg-6">
-            <legend class="main-content-fieldset__title">
+            <legend class="main-content-fieldset__title d-none">
               С каким приложением путешествовали?
             </legend>
+            <h3
+              class="main-content-fieldset__title fieldset__custom-title d-md-none"
+            >
+              С каким приложением путешествовали?
+            </h3>
             <div class="form-check">
               <input
                 class="form-check-input custom-radio"
@@ -149,11 +154,20 @@
             </div>
           </fieldset>
           <fieldset class="fieldset main-content-fieldset__contact-information">
-            <legend class="main-content-fieldset__title fieldset-title-custom">
+            <legend
+              class="main-content-fieldset__title fieldset-title-custom d-none"
+            >
               Контактная информация
             </legend>
             <div class="fieldset-row row">
-              <div class="input-group main-content-fieldset__item col-lg-5">
+              <div
+                class="input-group main-content-fieldset__item col-12 col-lg-5"
+              >
+                <label
+                  for="label-phone"
+                  class="main-content-forms__custom-label main-content-fieldset__custom-label d-md-none"
+                  >Номер телефона</label
+                >
                 <input
                   type="text"
                   class="form-control main-content-forms__custom-input"
@@ -164,18 +178,25 @@
                 />
                 <div class="input-group-append">
                   <span
-                    class="input-group-text main-content-fieldset__span"
+                    class="input-group-text main-content-fieldset__span d-none"
                     id="basic-addon2"
                     ><img src="images/phone-contacts__phone.svg" alt="Phone"
                   /></span>
                 </div>
                 <label
                   for="label-phone"
-                  class="main-content-forms__custom-label main-content-fieldset__custom-label"
+                  class="main-content-forms__custom-label main-content-fieldset__custom-label d-none"
                   >Номер телефона</label
                 >
               </div>
-              <div class="input-group main-content-fieldset__item col-lg-5">
+              <div
+                class="input-group main-content-fieldset__item col-12 col-lg-5"
+              >
+                <label
+                  for="email-label"
+                  class="main-content-forms__custom-label main-content-fieldset__custom-label d-md-none"
+                  >Адрес почты</label
+                >
                 <input
                   type="text"
                   class="form-control main-content-forms__custom-input"
@@ -186,7 +207,7 @@
                 />
                 <div class="input-group-append">
                   <span
-                    class="input-group-text main-content-fieldset__span"
+                    class="input-group-text main-content-fieldset__span d-none"
                     id="basic-addon2"
                     ><img src="images/phone-contacts__email.svg" alt="Email"
                   /></span>
@@ -194,7 +215,7 @@
 
                 <label
                   for="email-label"
-                  class="main-content-forms__custom-label main-content-fieldset__custom-label"
+                  class="main-content-forms__custom-label main-content-fieldset__custom-label d-none"
                   >Адрес почты</label
                 >
               </div>
