@@ -97,7 +97,7 @@ input[placeholder]::-webkit-input-placeholder {
   margin: 0;
   width: 90%;
 }
-
+/* Radio-inputs for apps */
 .custom-radio {
   position: absolute;
   z-index: -1;
@@ -128,8 +128,16 @@ input[placeholder]::-webkit-input-placeholder {
 .custom-radio:not(:disabled) + label:active:before {
   border-color: #d22856;
 }
-.custom-radio:checked + label::before {
-  background-image: url(images/radio-checked.svg);
+.custom-radio:checked + label::after {
+  content: "";
+  background-color: #d22856;
+  position: absolute;
+  left: 29px;
+  top: 9px;
+  width: 1em;
+  height: 1em;
+
+  border-radius: 100%;
 }
 .main-content-fieldset__contact-information {
   border: 2px solid #e5e5e5;
@@ -152,6 +160,11 @@ input[placeholder]::-webkit-input-placeholder {
   width: 100%;
   margin: 15px;
 }
+.main-content-fieldset__span {
+  background-color: #e5e5e5;
+  padding: 0 20px;
+}
+
 @media screen and (max-width: 991px) {
   .navbar-brand {
     background-image: url("images/logotype-tablet.svg");
