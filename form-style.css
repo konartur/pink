@@ -136,12 +136,16 @@ input[placeholder]::-webkit-input-placeholder {
   margin-top: 60px;
   width: 100%;
 }
+.fieldset-row {
+  justify-content: space-around;
+  margin: 0 auto;
+}
 .fieldset-title-custom {
   width: 40%;
 }
 .main-content-fieldset__item {
   margin-top: 45px;
-  margin-left: 60px;
+
   width: 35%;
 }
 .main-content-fieldset__custom-label {
