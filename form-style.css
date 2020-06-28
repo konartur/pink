@@ -247,12 +247,14 @@ input[placeholder]::-webkit-input-placeholder {
   .form-group {
     margin-top: 0;
   }
+  .form-group:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   .main-content-forms__custom-label {
     font-size: 14px;
     font-weight: 500;
     margin-left: 25px;
-    margin-bottom: 15px;
 
     width: calc(100% - 25px);
   }
@@ -264,8 +266,11 @@ input[placeholder]::-webkit-input-placeholder {
     background-color: #e5e5e5;
     margin-top: 45px;
   }
+  .main-content-fieldset__item:not(:last-child) {
+    margin-top: 30px;
+  }
   .fieldset__custom-title {
-    padding-top: 45px;
+    padding-top: 40px;
     width: 100%;
   }
   .form-check {
@@ -277,9 +282,6 @@ input[placeholder]::-webkit-input-placeholder {
   }
   .main-content-fieldset__contact-information {
     border: none;
-    margin-top: 0;
-  }
-  .main-content-fieldset__item {
     margin-top: 0;
   }
 }
