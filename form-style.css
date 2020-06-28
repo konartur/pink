@@ -75,7 +75,7 @@
 }
 
 .form-check {
-  width: 50%;
+  width: 90%;
   margin: 35px auto;
 }
 .form-check-label {
@@ -248,8 +248,9 @@ input[placeholder]::-webkit-input-placeholder {
     font-size: 14px;
     font-weight: 500;
     margin-left: 25px;
-    margin-bottom: 0;
-    width: 100%;
+    margin-bottom: 15px;
+
+    width: calc(100% - 25px);
   }
   .main-content-forms__custom-input {
     width: 100%;
