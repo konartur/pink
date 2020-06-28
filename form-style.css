@@ -48,9 +48,11 @@
 .main-content-forms__user-form {
   padding-right: 70px;
 }
-.main-content-forms__user-form,
-.main-content-fieldset__apps-check {
+.main-content-forms__user-form {
   margin-top: 80px;
+}
+.main-content-fieldset__apps-check {
+  margin-top: 70px;
 }
 .main-content__title,
 .main-content__title-block {
@@ -73,9 +75,11 @@
   border-radius: 0em;
   height: 60px;
 }
-
+.form-group:not(:last-child) {
+  margin-bottom: 3.6em;
+}
 .form-check {
-  width: 50%;
+  width: 90%;
   margin: 35px auto;
 }
 .form-check-label {
@@ -162,7 +166,42 @@ input[placeholder]::-webkit-input-placeholder {
   background-color: #e5e5e5;
   padding: 0 20px;
 }
+/* Fieldset progress */
+.main-content-fieldset__progress {
+  border: 2px solid #e5e5e5;
+  margin-top: 60px;
+  width: 100%;
+}
+.main-content-fieldset__progress-label {
+  font-family: "Open Sans", sans-serif;
 
+  font-weight: 400;
+  font-size: 18px;
+}
+.fieldset-progress__first-row,
+.fieldset-progress__second-row {
+  justify-content: space-around;
+  margin: 55px;
+}
+
+/* Custom checkbox */
+.main-content-fieldset__progress-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.progress-label__check-box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -3em;
+  box-shadow: 0 0 0 2px #e5e5e5;
+}
+/* Checked */
+.main-content-fieldset__progress-input:checked + .progress-label__check-box {
+  background: url("images/done_fieldset-progress.svg") center center no-repeat;
+}
 @media screen and (max-width: 991px) {
   .navbar-brand {
     background-image: url("images/logotype-tablet.svg");
@@ -218,6 +257,10 @@ input[placeholder]::-webkit-input-placeholder {
   .form-group {
     margin-top: 50px;
   }
+  .form-check {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -239,13 +282,16 @@ input[placeholder]::-webkit-input-placeholder {
   .form-group {
     margin-top: 0;
   }
+  .form-group:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   .main-content-forms__custom-label {
     font-size: 14px;
     font-weight: 500;
     margin-left: 25px;
-    margin-bottom: 0;
-    width: 100%;
+
+    width: calc(100% - 25px);
   }
   .main-content-forms__custom-input {
     width: 100%;
@@ -255,8 +301,11 @@ input[placeholder]::-webkit-input-placeholder {
     background-color: #e5e5e5;
     margin-top: 45px;
   }
+  .main-content-fieldset__item:not(:last-child) {
+    margin-top: 30px;
+  }
   .fieldset__custom-title {
-    padding-top: 45px;
+    padding-top: 40px;
     width: 100%;
   }
   .form-check {
@@ -268,9 +317,6 @@ input[placeholder]::-webkit-input-placeholder {
   }
   .main-content-fieldset__contact-information {
     border: none;
-    margin-top: 0;
-  }
-  .main-content-fieldset__item {
     margin-top: 0;
   }
 }
