@@ -663,9 +663,9 @@ body {
     margin-top: 0;
   }
   .table-slider__stock-item::before {
-    width: 40%;
+    width: 45%;
     top: 15px;
-    left: -35px;
+    left: -60px;
   }
 
   /*  Footer */

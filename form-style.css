@@ -202,6 +202,12 @@ input[placeholder]::-webkit-input-placeholder {
 .main-content-fieldset__progress-input:checked + .progress-label__check-box {
   background: url("images/done_fieldset-progress.svg") center center no-repeat;
 }
+.main-content-fieldset__progress-input:hover + .progress-label__check-box {
+  box-shadow: 0 0 0 2px #000;
+}
+.main-content-fieldset__progress-input:active + .progress-label__check-box {
+  box-shadow: 0 0 0 2px #d22856;
+}
 @media screen and (max-width: 991px) {
   .navbar-brand {
     background-image: url("images/logotype-tablet.svg");
