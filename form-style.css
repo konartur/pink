@@ -228,7 +228,26 @@ input[placeholder]::-webkit-input-placeholder {
   resize: none;
   width: calc(100% - 120px);
 }
+/* Main-content button */
+.main-content-button {
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.custom-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
 
+  border-color: #2aab6d;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+}
+.main-content-button__description-star {
+  color: #de6183;
+}
+.main-content-button__description__p {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 991px) {
   .navbar-brand {
     background-image: url("images/logotype-tablet.svg");
