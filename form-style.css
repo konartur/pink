@@ -218,6 +218,10 @@ input[placeholder]::-webkit-input-placeholder {
   .form-group {
     margin-top: 50px;
   }
+  .form-check {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
 }
 
 @media screen and (max-width: 576px) {
