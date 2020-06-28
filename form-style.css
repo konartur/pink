@@ -48,9 +48,11 @@
 .main-content-forms__user-form {
   padding-right: 70px;
 }
-.main-content-forms__user-form,
-.main-content-fieldset__apps-check {
+.main-content-forms__user-form {
   margin-top: 80px;
+}
+.main-content-fieldset__apps-check {
+  margin-top: 70px;
 }
 .main-content__title,
 .main-content__title-block {
@@ -73,7 +75,9 @@
   border-radius: 0em;
   height: 60px;
 }
-
+.form-group:not(:last-child) {
+  margin-bottom: 3.6em;
+}
 .form-check {
   width: 90%;
   margin: 35px auto;
