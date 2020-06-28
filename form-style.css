@@ -182,6 +182,8 @@ input[placeholder]::-webkit-input-placeholder {
 .fieldset-progress__second-row {
   justify-content: space-around;
   margin: 55px;
+  margin-left: 100px;
+  width: calc(100% - 100px);
 }
 
 /* Custom checkbox */
@@ -193,14 +195,99 @@ input[placeholder]::-webkit-input-placeholder {
 }
 .progress-label__check-box {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-left: -3em;
   box-shadow: 0 0 0 2px #e5e5e5;
 }
 /* Checked */
 .main-content-fieldset__progress-input:checked + .progress-label__check-box {
   background: url("images/done_fieldset-progress.svg") center center no-repeat;
+}
+.main-content-fieldset__progress-input:hover + .progress-label__check-box {
+  box-shadow: 0 0 0 2px #000;
+}
+.main-content-fieldset__progress-input:active + .progress-label__check-box {
+  box-shadow: 0 0 0 2px #d22856;
+}
+
+/* Fieldset textarea */
+.main-content-fieldset__comment {
+  border: 2px solid #e5e5e5;
+  font-family: "Open Sans", sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 60px;
+  width: 100%;
+}
+.fieldset__textarea {
+  border: 2px solid #e5e5e5;
+  margin: 30px 60px;
+  padding: 20px;
+  resize: none;
+  width: calc(100% - 120px);
+}
+/* Main-content button */
+.main-content-button {
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.custom-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+
+  border-color: #2aab6d;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+}
+.main-content-button__description-star {
+  color: #de6183;
+}
+.main-content-button__description__p {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer__title {
+  width: 50%;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contact-title,
+.footer__footer-phone {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer__phone {
+  color: #e77694;
+  font-size: 20px;
+}
+.footer__map {
+  clip-path: polygon(50% 40%, 100% 0, 100% 100%, 0 100%, 0 0);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer__feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.footer__copyright-text {
+  float: left;
+  margin: auto 15px auto 0;
+}
+.footer__copyright-logo {
+  float: right;
 }
 @media screen and (max-width: 991px) {
   .navbar-brand {
