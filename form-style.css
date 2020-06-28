@@ -166,6 +166,16 @@ input[placeholder]::-webkit-input-placeholder {
   background-color: #e5e5e5;
   padding: 0 20px;
 }
+/* Fieldset progress */
+.main-content-fieldset__progress {
+  border: 2px solid #e5e5e5;
+  margin-top: 60px;
+  width: 100%;
+}
+.fieldset-progress__first-row,
+.fieldset-progress__second-row {
+  justify-content: space-around;
+}
 
 @media screen and (max-width: 991px) {
   .navbar-brand {
