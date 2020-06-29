@@ -97,7 +97,8 @@ input[placeholder]::-webkit-input-placeholder {
 .main-content-fieldset__title {
   text-align: center;
   margin: 0;
-  width: 90%;
+  padding: 0 30px;
+  width: auto;
 }
 /* Radio-inputs for apps */
 .custom-radio {
@@ -150,9 +151,7 @@ input[placeholder]::-webkit-input-placeholder {
   justify-content: space-around;
   margin: 0 auto;
 }
-.fieldset-title-custom {
-  width: 40%;
-}
+
 .main-content-fieldset__item {
   margin-top: 45px;
 
@@ -174,9 +173,11 @@ input[placeholder]::-webkit-input-placeholder {
 }
 .main-content-fieldset__progress-label {
   font-family: "Open Sans", sans-serif;
-
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 .fieldset-progress__first-row,
 .fieldset-progress__second-row {
@@ -195,8 +196,8 @@ input[placeholder]::-webkit-input-placeholder {
 }
 .progress-label__check-box {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-left: -3em;
   box-shadow: 0 0 0 2px #e5e5e5;
 }
