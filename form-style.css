@@ -305,6 +305,14 @@ input[placeholder]::-webkit-input-placeholder {
   .nav-item {
     margin-right: 0;
   }
+  .navbar-collapse {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #283645;
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -360,6 +368,7 @@ input[placeholder]::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 1.5;
     margin: 55px auto;
+    width: 100%;
   }
   .main-content-forms__user-form,
   .main-content-fieldset__apps-check {
