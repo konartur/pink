@@ -453,4 +453,52 @@ input[placeholder]::-webkit-input-placeholder {
   .main-content-fieldset__progress-input:checked + .progress-label__check-box {
     background-color: #fff;
   }
+
+  /* Contacts form */
+  .main-content-fieldset__item:nth-child(2) {
+    margin-top: 0;
+  }
+  /* Check form */
+  .form-check {
+    padding-left: 0;
+  }
+
+  /* Comments form */
+  .main-content-fieldset__comment {
+    border: none;
+    margin-top: 30px;
+  }
+  .fieldset__textarea {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+
+  /* Form button */
+  .main-content-button {
+    margin-top: 0;
+  }
+  .custom-button {
+    margin: 30px 20px 0 20px;
+    height: 65px;
+    font-size: 16px;
+  }
+  .main-content-button__description {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  /* Footer */
+  .footer__feedback {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer__copyright {
+    display: inherit;
+    justify-content: center;
+  }
+  .footer__copyright-text,
+  .footer__copyright-logo {
+    float: none;
+  }
 }
