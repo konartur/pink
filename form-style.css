@@ -97,7 +97,8 @@ input[placeholder]::-webkit-input-placeholder {
 .main-content-fieldset__title {
   text-align: center;
   margin: 0;
-  width: 90%;
+  padding: 0 30px;
+  width: auto;
 }
 /* Radio-inputs for apps */
 .custom-radio {
@@ -150,9 +151,7 @@ input[placeholder]::-webkit-input-placeholder {
   justify-content: space-around;
   margin: 0 auto;
 }
-.fieldset-title-custom {
-  width: 40%;
-}
+
 .main-content-fieldset__item {
   margin-top: 45px;
 
@@ -174,9 +173,11 @@ input[placeholder]::-webkit-input-placeholder {
 }
 .main-content-fieldset__progress-label {
   font-family: "Open Sans", sans-serif;
-
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 .fieldset-progress__first-row,
 .fieldset-progress__second-row {
@@ -195,8 +196,8 @@ input[placeholder]::-webkit-input-placeholder {
 }
 .progress-label__check-box {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-left: -3em;
   box-shadow: 0 0 0 2px #e5e5e5;
 }
@@ -304,6 +305,14 @@ input[placeholder]::-webkit-input-placeholder {
   .nav-item {
     margin-right: 0;
   }
+  .navbar-collapse {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #283645;
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -359,18 +368,18 @@ input[placeholder]::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 1.5;
     margin: 55px auto;
+    width: 100%;
   }
   .main-content-forms__user-form,
   .main-content-fieldset__apps-check {
     margin-top: 0;
     padding-right: 15px;
   }
-
   .form-group {
     margin-top: 0;
   }
   .form-group:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .main-content-forms__custom-label {
@@ -385,7 +394,7 @@ input[placeholder]::-webkit-input-placeholder {
   }
   .main-content-fieldset__apps-check {
     border: none;
-    background-color: #e5e5e5;
+    background-color: #f2f2f2;
     margin-top: 45px;
   }
   .main-content-fieldset__item:not(:last-child) {
@@ -405,5 +414,91 @@ input[placeholder]::-webkit-input-placeholder {
   .main-content-fieldset__contact-information {
     border: none;
     margin-top: 0;
+  }
+  /* Progress block */
+  .main-content-fieldset__progress {
+    border: none;
+    background-color: #f2f2f2;
+    margin-top: 45px;
+  }
+  .main-content-fieldset__progress-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #de6183;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    max-width: w 70%;
+  }
+  .fieldset-progress__first-row,
+  .fieldset-progress__second-row {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fieldset-progress__first-row {
+    margin-top: 15px;
+  }
+  .fieldset-progress__second-row {
+    margin-bottom: 15px;
+  }
+  .main-content-fieldset__progress-label {
+    margin: 15px auto;
+    font-size: 16px;
+  }
+  .progress-label__check-box {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #e5e5e5;
+  }
+  .main-content-fieldset__progress-input:checked + .progress-label__check-box {
+    background-color: #fff;
+  }
+
+  /* Contacts form */
+  .main-content-fieldset__item:nth-child(2) {
+    margin-top: 0;
+  }
+  /* Check form */
+  .form-check {
+    padding-left: 0;
+  }
+
+  /* Comments form */
+  .main-content-fieldset__comment {
+    border: none;
+    margin-top: 30px;
+  }
+  .fieldset__textarea {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+
+  /* Form button */
+  .main-content-button {
+    margin-top: 0;
+  }
+  .custom-button {
+    margin: 30px 20px 0 20px;
+    height: 65px;
+    font-size: 16px;
+  }
+  .main-content-button__description {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  /* Footer */
+  .footer__feedback {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer__copyright {
+    display: inherit;
+    justify-content: center;
+  }
+  .footer__copyright-text,
+  .footer__copyright-logo {
+    float: none;
   }
 }

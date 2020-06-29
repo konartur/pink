@@ -72,7 +72,9 @@
         </h2>
 
         <form action="" class="main-content__forms row">
-          <div class="main-content-forms__user-form col-12 col-lg-6">
+          <div
+            class="main-content-forms__user-form order-1 order-md-1 col-12 col-lg-6"
+          >
             <div class="form-group d-md-flex align-items-center">
               <label
                 for="first-name"
@@ -118,7 +120,9 @@
             </div>
           </div>
 
-          <fieldset class="fieldset main-content-fieldset__apps-check col-lg-6">
+          <fieldset
+            class="fieldset main-content-fieldset__apps-check order-4 order-md-2 col-lg-6"
+          >
             <legend class="main-content-fieldset__title d-none d-md-block">
               С каким приложением путешествовали?
             </legend>
@@ -165,10 +169,10 @@
             </div>
           </fieldset>
 
-          <fieldset class="fieldset main-content-fieldset__contact-information">
-            <legend
-              class="main-content-fieldset__title fieldset-title-custom d-none d-md-block"
-            >
+          <fieldset
+            class="fieldset main-content-fieldset__contact-information order-3 order-md-3"
+          >
+            <legend class="main-content-fieldset__title d-none d-md-block">
               Контактная информация
             </legend>
             <div class="fieldset-row row">
@@ -238,13 +242,18 @@
             </div>
           </fieldset>
 
-          <fieldset class="fieldset main-content-fieldset__progress">
-            <legend class="main-content-fieldset__title">
+          <fieldset
+            class="fieldset main-content-fieldset__progress order-2 order-md-4"
+          >
+            <legend class="main-content-fieldset__title d-none d-md-block">
               Ваши безбашенные достижения в путешествии
             </legend>
+            <h2 class="main-content-fieldset__progress-title d-md-none">
+              Ваши безбашенные достижения в путешествии
+            </h2>
             <div class="fieldset-progress__first-row row">
               <label
-                class="main-content-fieldset__progress-label col-12 col-lg-3"
+                class="main-content-fieldset__progress-label col-8 col-lg-3"
               >
                 <input
                   type="checkbox"
@@ -255,7 +264,7 @@
                 Сделал селфи с акулой
               </label>
               <label
-                class="main-content-fieldset__progress-label col-12 col-lg-3"
+                class="main-content-fieldset__progress-label col-8 col-lg-3"
               >
                 <input
                   type="checkbox"
@@ -265,7 +274,7 @@
                 Видел Чака Норриса
               </label>
               <label
-                class="main-content-fieldset__progress-label col-12 col-lg-3"
+                class="main-content-fieldset__progress-label col-8 col-lg-3"
               >
                 <input
                   type="checkbox"
@@ -278,7 +287,7 @@
             </div>
             <div class="fieldset-progress__second-row row">
               <label
-                class="main-content-fieldset__progress-label col-12 col-lg-3"
+                class="main-content-fieldset__progress-label col-8 col-lg-3"
               >
                 <input
                   type="checkbox"
@@ -289,7 +298,7 @@
                 Обгорел на пляже
               </label>
               <label
-                class="main-content-fieldset__progress-label col-12 col-lg-3"
+                class="main-content-fieldset__progress-label col-8 col-lg-3"
               >
                 <input
                   type="checkbox"
@@ -299,7 +308,7 @@
                 Накупил сувениров
               </label>
               <label
-                class="main-content-fieldset__progress-label col-12 col-lg-3"
+                class="main-content-fieldset__progress-label col-8 col-lg-3"
               >
                 <input
                   type="checkbox"
@@ -311,7 +320,9 @@
             </div>
           </fieldset>
 
-          <fieldset class="fieldset main-content-fieldset__comment">
+          <fieldset
+            class="fieldset main-content-fieldset__comment order-5 order-md-5"
+          >
             <legend class="main-content-fieldset__title">
               Опишите свои эмоции
             </legend>
@@ -331,40 +342,41 @@
             Отправить форму
           </button>
           <div
-            class="main-content-button__description d-inline-flex align-items-center col-lg-4"
+            class="main-content-button__description d-inline-flex align-items-center col-lg-5"
           >
             <span class="main-content-button__description-star">&midast;</span>
-            <p class="main-content-button__description__p">
+            <p class="main-content-button__description__p d-none d-md-block">
               &horbar; Обязательные для заполнения поля
+            </p>
+            <p class="main-content-button__description__p d-md-none">
+              &horbar; Обязательные поля
             </p>
           </div>
         </div>
 
-        <footer class="footer">
-          <div class="footer__feedback">
-            <div class="footer__logo">
-              <img src="images/footer__logo.svg" alt="Pink-logo" />
-            </div>
-            <div class="footer__social">
-              <a href="#"
-                ><img src="images/footer__twiter.svg" alt="twitter"
-              /></a>
-              <a href="#"
-                ><img src="images/footer_facebook.svg" alt="facebook"
-              /></a>
-              <a href="#"
-                ><img src="images/footer_youtube.svg" alt="youtube"
-              /></a>
-            </div>
-            <div class="footer__copyright">
-              <p class="footer__copyright-text">Разработано</p>
-              <a href="#"
-                ><img
-                  src="images/footer_html-logo.svg"
-                  alt="HTML Academy"
-                  class="footer__copyright-logo"
-              /></a>
-            </div>
+        <footer class="footer footer__feedback row">
+          <div class="footer__log col-12">
+            <img src="images/footer__logo.svg" alt="Pink-logo" />
+          </div>
+          <div class="footer__social col-12">
+            <a href="#"
+              ><img src="images/footer__twiter.svg" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_youtube.svg" alt="youtube"
+            /></a>
+          </div>
+          <div class="footer__copyright col-12">
+            <p class="footer__copyright-text">Разработано</p>
+            <a href="#"
+              ><img
+                src="images/footer_html-logo.svg"
+                alt="HTML Academy"
+                class="footer__copyright-logo"
+            /></a>
           </div>
         </footer>
       </div>
