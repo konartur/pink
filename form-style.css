@@ -363,6 +363,10 @@ input[placeholder]::-webkit-input-placeholder {
   .header__title h1 {
     font-size: 24px;
   }
+  /*Nav bar*/
+  .nav-link {
+    padding: 0.6rem 1rem;
+  }
   /* Main-content Forms */
   .main-content__title {
     font-size: 14px;
@@ -449,6 +453,7 @@ input[placeholder]::-webkit-input-placeholder {
   .progress-label__check-box {
     background-color: #fff;
     box-shadow: 0 0 0 2px #e5e5e5;
+    margin-left: -3em;
   }
   .main-content-fieldset__progress-input:checked + .progress-label__check-box {
     background-color: #fff;
