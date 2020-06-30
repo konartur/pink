@@ -467,6 +467,9 @@ input[placeholder]::-webkit-input-placeholder {
   .form-check {
     padding-left: 0;
   }
+  .custom-radio:checked + label::after {
+    left: 9px;
+  }
 
   /* Comments form */
   .main-content-fieldset__comment {
@@ -474,8 +477,8 @@ input[placeholder]::-webkit-input-placeholder {
     margin-top: 30px;
   }
   .fieldset__textarea {
-    margin: 20px;
-    width: calc(100% - 40px);
+    margin: 15px;
+    width: calc(100% - 30px);
   }
 
   /* Form button */
@@ -483,7 +486,7 @@ input[placeholder]::-webkit-input-placeholder {
     margin-top: 0;
   }
   .custom-button {
-    margin: 30px 20px 0 20px;
+    margin: 30px 15px 0 15px;
     height: 65px;
     font-size: 16px;
   }
