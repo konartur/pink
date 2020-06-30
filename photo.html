@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="reset.css " />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="photo-style.css" />
+    <title>Фотографии</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark header__navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto menu">
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="index.html">Главная </a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="photo.html">Фотографии </a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="form.html">Конкурс </a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link" href="https://htmlacademy.ru"
+                  >HTML Academy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="header-content__title">
+        Фотографии пользователей
+      </h1>
+    </header>
+    <section class="main-content">
+      <div class="container">
+        <h2 class="main-content__title">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как
+          не хватает ваших?
+        </h2>
+      </div>
+      <div class="main-content__panorama">
+        <div class="container">
+          <span class="main-content-panorama__day">Панорама дня</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-content-panorama__comment">
+          <div class="d-flex justify-content-around">
+            <div class="main-content-panorama__comment-author d-inline-flex">
+              <h3 class="main-content-panorama__comment-name">Анна</h3>
+              <span class="main-contentn-panorama__comment-time">
+                (5 минут назад)
+              </span>
+            </div>
+            <div class="main-content-panorama__comment-likes d-inline-flex">
+              <h3 class="main-content-panorama__comment-like-photo">
+                Нравится: 215
+              </h3>
+              <img
+                src="images/panorama-icon-heart.svg"
+                alt="heart"
+                class="main-content-panorama__comment-heart"
+              />
+            </div>
+          </div>
+
+          <div class="main-content-panorama__comment-text">
+            <p>
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите
+              прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
