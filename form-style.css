@@ -24,6 +24,9 @@
 .nav-item {
   margin-right: 10%;
 }
+.navbar-collapse {
+  transition: 0.3s linear;
+}
 .header__title {
   margin: 0 auto;
   width: 70%;
@@ -316,6 +319,12 @@ input[placeholder]::-webkit-input-placeholder {
 }
 
 @media screen and (max-width: 768px) {
+  /*Navbar*/
+
+  .nav-link {
+    padding: 1.4rem 1rem;
+  }
+  /*Header*/
   .header__title {
     padding: 35px 0 50px 0;
     margin: 0 auto;
@@ -356,6 +365,27 @@ input[placeholder]::-webkit-input-placeholder {
   .form-check {
     margin-left: 60px;
     width: calc(100% - 60px);
+  }
+  .fieldset-progress__first-row,
+  .fieldset-progress__second-row {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fieldset-progress__first-row {
+    margin-top: 15px;
+  }
+  .fieldset-progress__second-row {
+    margin-bottom: 15px;
+  }
+  .main-content-fieldset__progress-label {
+    margin: 15px auto;
+    font-size: 16px;
+  }
+  /* Form button */
+
+  .custom-button {
+    height: 65px;
+    font-size: 16px;
   }
 }
 
@@ -435,21 +465,7 @@ input[placeholder]::-webkit-input-placeholder {
     margin: 30px auto 0 auto;
     max-width: w 70%;
   }
-  .fieldset-progress__first-row,
-  .fieldset-progress__second-row {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .fieldset-progress__first-row {
-    margin-top: 15px;
-  }
-  .fieldset-progress__second-row {
-    margin-bottom: 15px;
-  }
-  .main-content-fieldset__progress-label {
-    margin: 15px auto;
-    font-size: 16px;
-  }
+
   .progress-label__check-box {
     background-color: #fff;
     box-shadow: 0 0 0 2px #e5e5e5;
@@ -487,8 +503,6 @@ input[placeholder]::-webkit-input-placeholder {
   }
   .custom-button {
     margin: 30px 15px 0 15px;
-    height: 65px;
-    font-size: 16px;
   }
   .main-content-button__description {
     justify-content: center;
