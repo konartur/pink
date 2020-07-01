@@ -7,8 +7,9 @@
 
 .navbar {
   padding: 0;
-
-  background-color: #283645;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  background: rgba(0, 0, 0, 0.3);
 }
 .navbar-brand {
   background-image: url("images/logo.svg");

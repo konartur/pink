@@ -1,8 +1,9 @@
+
 /*Header*/
 .header-content__title {
   margin: 0 auto;
   padding: 80px 0 100px 0;
-  width: 30%;
+  width: 36%;
 }
 /*Main-content*/
 .main-content__title {
@@ -12,6 +13,10 @@
   margin: 100px auto;
   width: 50%;
 }
+
+
+
+
 /*Panorama*/
 .main-content__panorama {
   position: relative;
@@ -44,3 +49,4 @@
   text-align: center;
   margin-bottom: 0;
 }
+

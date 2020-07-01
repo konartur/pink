@@ -3,50 +3,6 @@ body {
   height: 100%;
 }
 
-/* Header */
-.header {
-  background-image: url("images/header_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.navbar {
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 35px;
-  background: rgba(0, 0, 0, 0.3);
-}
-.navbar-brand {
-  background-image: url("images/logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 160px;
-  height: 80px;
-}
-.navbar-nav {
-  width: 100%;
-  justify-content: flex-end;
-}
-.navbar-nav .menu__item:not(:first-child) {
-  margin-left: 10%;
-}
-
-.navbar-nav.menu .menu__item a {
-  color: #fff;
-  white-space: nowrap;
-}
-
-.header-content .header-content__title {
-  color: #fff;
-  /* font-size: calc(24px + 36 * ((100vw - 320px) / (1280 - 320))); */
-  font-size: 50px;
-  font-weight: lighter;
-  width: 78%;
-  margin: 0 auto;
-  margin-top: 120px;
-  text-align: center;
-}
-
 .header-content .header-content__btn {
   width: 100%;
 
