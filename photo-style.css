@@ -67,6 +67,9 @@
   padding: 30px 0;
 }
 /*Gallery*/
+.main-content__gallery {
+  margin-top: 50px;
+}
 .main-content__gallery-item {
-  background-color: #f2f2f2;
+  margin-bottom: 60px;
 }
