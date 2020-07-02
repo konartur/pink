@@ -45,7 +45,7 @@
 }
 /*Panorama*/
 .main-content__panorama {
-  background: url("images/panorama-photo.jpg") no-repeat;
+  background: url("images/panorama-photo.jpg") center no-repeat;
   background-size: cover;
   height: 500px;
 }
@@ -63,6 +63,9 @@
 
   margin-top: 55px;
   z-index: 1;
+}
+.main-content-panorama__comment-likes {
+  align-items: center;
 }
 .main-content-panorama__comment-likes img {
   margin-left: 10px;
@@ -196,4 +199,16 @@
   color: #dddfe0;
 }
 @media screen and (max-width: 768px) {
+  /*Header*/
+  .header-content__title {
+    width: 78%;
+  }
+  /*Main-content*/
+  .main-content__title {
+    width: 70%;
+  }
+  /*Panorama*/
+  .main-content-panorama__comment {
+    padding: 20px 30px;
+  }
 }
