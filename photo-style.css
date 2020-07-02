@@ -237,3 +237,69 @@
     margin: 60px auto 30px auto;
   }
 }
+@media screen and (max-width: 576px) {
+  /*Header*/
+  .header-content__title {
+    padding: 40px 0 80px 0;
+    font-size: 24px;
+    width: 50%;
+  }
+  /*Main-contennt*/
+  .main-content__title {
+    margin: 50px auto;
+    line-height: 2;
+    width: 78%;
+  }
+  /*Panorama*/
+  .main-content__panorama {
+    height: 140px;
+  }
+  .main-content-panorama__day {
+    margin-top: 0;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    height: 30px;
+    padding: 5px 15px;
+  }
+  .comment-author,
+  .comment-time,
+  .comment-text,
+  .like-photo {
+    font-size: 12px;
+    line-height: 2;
+  }
+  .main-content-panorama__comment-likes img {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  /*Gallery*/
+  .main-content__gallery {
+    margin-top: 20px;
+  }
+  .main-content__gallery-description {
+    padding: 25px 15px;
+    line-height: 1;
+  }
+  .main-content-gallery-item__photo img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .main-content-gallery-item__comment-text {
+    height: auto;
+    padding: 0;
+  }
+  .main-content-gallery-item__comment-likes {
+    justify-content: start;
+  }
+  .main-content-gallery-item__comment-likes img {
+    margin-right: 15px;
+  }
+  .like-photo {
+    font-weight: bold;
+  }
+  /*Filter*/
+  .like-photo {
+    width: 100%;
+  }
+}
