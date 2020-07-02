@@ -70,22 +70,24 @@
         </h2>
       </div>
       <div class="main-content__panorama">
-        <div class="container">
+        <div class="container position-relative">
           <span class="main-content-panorama__day">Панорама дня</span>
         </div>
       </div>
       <div class="container">
         <div class="main-content-panorama__comment">
           <div class="d-flex justify-content-between">
-            <div class="main-content-panorama__comment-author d-inline-flex">
+            <div class="main-content-panorama__comment-author comment-author">
               <h3 class="main-content-panorama__comment-name comment-author">
                 Анна
               </h3>
-              <span class="main-contentn-panorama__comment-time comment-time">
+              <div class="main-contentn-panorama__comment-time comment-time">
                 (5 минут назад)
-              </span>
+              </div>
             </div>
-            <div class="main-content-panorama__comment-likes d-inline-flex">
+            <div
+              class="main-content-panorama__comment-likes d-none d-md-inline-flex"
+            >
               <h3 class="main-content-panorama__comment-like-photo like-photo">
                 Нравится: 215
               </h3>
@@ -94,15 +96,21 @@
           </div>
 
           <div class="main-content-panorama__comment-text comment-text">
-            <p>
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите
-              прямую трансляцию в перископе, задавайте свои вопросы!
-            </p>
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+            трансляцию в перископе, задавайте свои вопросы!
+          </div>
+          <div
+            class="main-content-panorama__comment-likes d-inline-flex d-md-none"
+          >
+            <img src="images/main-content-heart.svg" alt="heart" />
+            <h3 class="main-content-panorama__comment-like-photo like-photo">
+              Нравится: 215
+            </h3>
           </div>
         </div>
         <div class="main-content__gallery">
-          <div class="row">
-            <div class="main-content__gallery-item col-lg-4">
+          <div class="row d-none d-lg-flex">
+            <div class="main-content__gallery-item col-md-6 col-lg-4">
               <div class="main-content-gallery-item__photo">
                 <img
                   class="gallery-img"
@@ -138,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div class="main-content__gallery-item col-lg-4">
+            <div class="main-content__gallery-item col-md-6 col-lg-4">
               <div class="main-content-gallery-item__photo">
                 <img
                   class="gallery-img"
@@ -174,7 +182,7 @@
                 </div>
               </div>
             </div>
-            <div class="main-content__gallery-item col-lg-4">
+            <div class="main-content__gallery-item col-md-6 col-lg-4">
               <div class="main-content-gallery-item__photo">
                 <img
                   class="gallery-img"
@@ -211,8 +219,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="main-content__gallery-item col-lg-4">
+          <div class="row d-none d-lg-flex">
+            <div class="main-content__gallery-item col-md-6 col-lg-4">
               <div class="main-content-gallery-item__photo">
                 <img
                   class="gallery-img"
@@ -248,7 +256,7 @@
                 </div>
               </div>
             </div>
-            <div class="main-content__gallery-item col-lg-4">
+            <div class="main-content__gallery-item col-md-6 col-lg-4">
               <div class="main-content-gallery-item__photo">
                 <img
                   class="gallery-img"
@@ -284,7 +292,7 @@
                 </div>
               </div>
             </div>
-            <div class="main-content__gallery-item col-lg-4">
+            <div class="main-content__gallery-item col-md-6 col-lg-4">
               <div class="main-content-gallery-item__photo">
                 <img
                   class="gallery-img"
@@ -321,29 +329,320 @@
               </div>
             </div>
           </div>
+          <div class="row d-flex d-lg-none">
+            <div class="main-content__gallery-item col-md-6">
+              <div class="main-content-gallery-item__photo">
+                <img
+                  class="gallery-img"
+                  src="images/gallery-photo1.jpg"
+                  alt="photo"
+                />
+              </div>
+              <div class="main-content__gallery-description">
+                <div class="main-content-gallery-item__author">
+                  <div
+                    class="main-content-gallery-item__author-name comment-author"
+                  >
+                    Левон
+                  </div>
+                  <div
+                    class="main-content-gallery-item__author-time comment-time"
+                  >
+                    (5 часов назад)
+                  </div>
+                </div>
+                <div
+                  class="main-content-gallery-item__comment-text comment-text"
+                >
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </div>
+                <div class="main-content-gallery-item__comment-likes">
+                  <h3
+                    class="main-content-gallery-item__comment-like-photo like-photo order-1 order-md-0"
+                  >
+                    Нравится: 356
+                  </h3>
+                  <img src="images/main-content-heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="main-content__gallery-item col-md-6">
+              <div class="main-content-gallery-item__photo">
+                <img
+                  class="gallery-img"
+                  src="images/gallery-photo2.jpg"
+                  alt="photo"
+                />
+              </div>
+              <div class="main-content__gallery-description">
+                <div class="main-content-gallery-item__author">
+                  <div
+                    class="main-content-gallery-item__author-name comment-author"
+                  >
+                    Антон
+                  </div>
+                  <div
+                    class="main-content-gallery-item__author-time comment-time"
+                  >
+                    (12 часов назад)
+                  </div>
+                </div>
+                <div
+                  class="main-content-gallery-item__comment-text comment-text"
+                >
+                  Соседи будут рады!
+                </div>
+                <div class="main-content-gallery-item__comment-likes">
+                  <h3
+                    class="main-content-gallery-item__comment-like-photo like-photo order-1 order-md-0"
+                  >
+                    Нравится: 666
+                  </h3>
+                  <img src="images/main-content-heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="main-content__gallery-item col-md-6">
+              <div class="main-content-gallery-item__photo">
+                <img
+                  class="gallery-img"
+                  src="images/gallery-photo3.jpg"
+                  alt="photo"
+                />
+              </div>
+              <div class="main-content__gallery-description">
+                <div class="main-content-gallery-item__author">
+                  <div
+                    class="main-content-gallery-item__author-name comment-author"
+                  >
+                    Борис
+                  </div>
+                  <div
+                    class="main-content-gallery-item__author-time comment-time"
+                  >
+                    (20 часов назад)
+                  </div>
+                </div>
+                <div
+                  class="main-content-gallery-item__comment-text comment-text"
+                >
+                  Здесь согла быть ваша цитата о высоком и вечном.
+                </div>
+                <div class="main-content-gallery-item__comment-likes">
+                  <h3
+                    class="main-content-gallery-item__comment-like-photo like-photo order-1 order-md-0"
+                  >
+                    Нравится: 215
+                  </h3>
+                  <img src="images/main-content-heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+
+            <div class="main-content__gallery-item col-md-6">
+              <div class="main-content-gallery-item__photo">
+                <img
+                  class="gallery-img"
+                  src="images/gallery-photo4.jpg"
+                  alt="photo"
+                />
+              </div>
+              <div class="main-content__gallery-description">
+                <div class="main-content-gallery-item__author">
+                  <div
+                    class="main-content-gallery-item__author-name comment-author"
+                  >
+                    Сергей
+                  </div>
+                  <div
+                    class="main-content-gallery-item__author-time comment-time"
+                  >
+                    (25 часов назад)
+                  </div>
+                </div>
+                <div
+                  class="main-content-gallery-item__comment-text comment-text"
+                >
+                  Самая кубанская в мире!
+                </div>
+                <div class="main-content-gallery-item__comment-likes">
+                  <h3
+                    class="main-content-gallery-item__comment-like-photo like-photo order-1 order-md-0"
+                  >
+                    Нравится: 4
+                  </h3>
+                  <img src="images/main-content-heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="main-content__gallery-item col-md-6">
+              <div class="main-content-gallery-item__photo">
+                <img
+                  class="gallery-img"
+                  src="images/gallery-photo5.jpg"
+                  alt="photo"
+                />
+              </div>
+              <div class="main-content__gallery-description">
+                <div class="main-content-gallery-item__author">
+                  <div
+                    class="main-content-gallery-item__author-name comment-author"
+                  >
+                    Максим
+                  </div>
+                  <div
+                    class="main-content-gallery-item__author-time comment-time"
+                  >
+                    (40 часов назад)
+                  </div>
+                </div>
+                <div
+                  class="main-content-gallery-item__comment-text comment-text"
+                >
+                  Где снег-то?
+                </div>
+                <div class="main-content-gallery-item__comment-likes">
+                  <h3
+                    class="main-content-gallery-item__comment-like-photo like-photo order-1 order-md-0"
+                  >
+                    Нравится: 150
+                  </h3>
+                  <img src="images/main-content-heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+            <div class="main-content__gallery-item col-md-6">
+              <div class="main-content-gallery-item__photo">
+                <img
+                  class="gallery-img"
+                  src="images/gallery-photo6.jpg"
+                  alt="photo"
+                />
+              </div>
+              <div class="main-content__gallery-description">
+                <div class="main-content-gallery-item__author">
+                  <div
+                    class="main-content-gallery-item__author-name comment-author"
+                  >
+                    Надежда
+                  </div>
+                  <div
+                    class="main-content-gallery-item__author-time comment-time"
+                  >
+                    (45 часов назад)
+                  </div>
+                </div>
+                <div
+                  class="main-content-gallery-item__comment-text comment-text"
+                >
+                  Всем GM и взаимные лайки!
+                </div>
+                <div class="main-content-gallery-item__comment-likes">
+                  <h3
+                    class="main-content-gallery-item__comment-like-photo like-photo order-1 order-md-0"
+                  >
+                    Нравится: 2560
+                  </h3>
+                  <img src="images/main-content-heart.svg" alt="heart" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <h4 class="main-content__title">
           Затмите их всех! <br />
-          Выкладывайте все, что накопилось в телефоне
+          Выкладывайте все, что накопилось в телефоне!
         </h4>
-        <div class="main-content__filter">
-          <div class="main-content__filter-photo">
-            <img src="images/filter-photo.jpg" alt="photo" />
+        <form class="filter">
+          <div class="filter__wrapper row">
+            <div class="filter__photo col-md-6">
+              <img src="images/filter-photo.jpg" alt="photo" />
+            </div>
+            <div class="filter__toggles col-md-6">
+              <div class="filter-toggles__crop">
+                <img
+                  class="filter-toggles__img"
+                  src="images/crop-filter.svg"
+                  alt="crop"
+                />
+                <input
+                  class="filter__input"
+                  min="1"
+                  max="10"
+                  value="3"
+                  type="range"
+                />
+              </div>
+              <div class="filter-toggles__color">
+                <img
+                  class="filter-toggles__img"
+                  src="images/color-filter.svg"
+                  alt="color"
+                />
+                <input
+                  class="filter__input"
+                  min="1"
+                  max="10"
+                  value="8"
+                  type="range"
+                />
+              </div>
+              <div class="filter-toggles__contrast">
+                <img
+                  class="filter-toggles__img"
+                  src="images/contrast-filter.svg"
+                  alt="contrast"
+                />
+                <input
+                  class="filter__input"
+                  min="1"
+                  max="10"
+                  value="6"
+                  type="range"
+                />
+              </div>
+              <div class="filter__buttons">
+                <button type="button" class="filter__button-post">
+                  Запостить
+                </button>
+                <button type="button" class="filter__button-cancel">
+                  Отмена
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="main-contentn__filter-toggles">
-            <div class="main-content-filter-toggles__crop">
-              <img src="images/crop-filter.svg" alt="crop" />
-            </div>
-            <div class="main-content-filter-toggles__color">
-              <img src="images/color-filter.svg" alt="color" />
-            </div>
-            <div class="main-content-filter-toggles__contrast">
-              <img src="images/contrast-filter.svg" alt="contrast" />
-            </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__feedback">
+          <div class="footer__logo">
+            <img src="images/footer__logo.svg" alt="Pink-logo" />
+          </div>
+          <div class="footer__social">
+            <a href="#"
+              ><img src="images/footer__twiter.svg" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_facebook.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_youtube.svg" alt="youtube"
+            /></a>
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">Разработано</p>
+            <a href="#"
+              ><img
+                src="images/footer_html-logo.svg"
+                alt="HTML Academy"
+                class="footer__copyright-logo"
+            /></a>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

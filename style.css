@@ -306,51 +306,11 @@ body {
   padding-right: 0;
 }
 
-.footer__feedback {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 200px;
-}
-
-.footer__copyright-text {
-  float: left;
-  margin: auto 15px auto 0;
-}
-.footer__copyright-logo {
-  float: right;
-}
 @media screen and (max-width: 991px) {
   .header-phone {
     width: 100%;
   }
-  .navbar {
-    background-color: #283645;
-    text-align: center;
-  }
-  .navbar-nav .menu__item:not(:first-child) {
-    margin-left: 0;
-  }
-  .menu__item {
-    border-top: 1px solid #000000;
-  }
-  .menu__item:last-child {
-    border-bottom: 1px solid #000000;
-  }
-  .header__navbar {
-    padding: 0;
-  }
-  .navbar-brand {
-    background-image: url("images/logotype-tablet.svg");
-  }
-  .navbar-collapse {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background-color: #283645;
-    z-index: 2;
-  }
+
   .header-content__title {
     font-size: 40px;
   }
