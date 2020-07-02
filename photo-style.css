@@ -39,23 +39,22 @@
 }
 /*Panorama*/
 .main-content__panorama {
-  position: relative;
   background: url("images/panorama-photo.jpg") no-repeat;
   background-size: cover;
   height: 500px;
 }
 .main-content-panorama__day {
-  float: right;
+  position: absolute;
+  right: 0;
   background-color: #d22856;
   color: #fff;
-  text-align: center;
-  vertical-align: middle;
+
   font-size: 14px;
-  max-width: 140px;
+
   height: 40px;
   text-transform: uppercase;
   padding: 10px 15px;
-  margin-right: 10px;
+
   margin-top: 55px;
   z-index: 1;
 }
