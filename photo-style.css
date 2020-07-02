@@ -299,7 +299,26 @@
     font-weight: bold;
   }
   /*Filter*/
-  .like-photo {
+  .filter__toggles {
+    margin: 40px 0;
+  }
+  .filter__photo img {
     width: 100%;
+  }
+  .filter-icon-hidden {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .filter-toggles__img {
+    width: 25%;
+  }
+  .filter-toggles__crop {
+    padding: 35px 0;
+    width: 90%;
+  }
+  /*Buttons*/
+  .filter__button-post {
+    margin: 40px 0 15px 0;
   }
 }
