@@ -324,22 +324,57 @@
           Затмите их всех! <br />
           Выкладывайте все, что накопилось в телефоне
         </h4>
-        <div class="main-content__filter">
-          <div class="main-content__filter-photo">
-            <img src="images/filter-photo.jpg" alt="photo" />
+        <form class="filter">
+          <div class="filter__wrapper row">
+            <div class="filter__photo col-lg-6">
+              <img src="images/filter-photo.jpg" alt="photo" />
+            </div>
+            <div class="filter__toggles col-lg-6">
+              <div class="filter-toggles__crop">
+                <img
+                  class="filter-toggles__img"
+                  src="images/crop-filter.svg"
+                  alt="crop"
+                />
+                <input
+                  class="filter__input"
+                  min="1"
+                  max="10"
+                  value="3"
+                  type="range"
+                />
+              </div>
+              <div class="filter-toggles__color">
+                <img
+                  class="filter-toggles__img"
+                  src="images/color-filter.svg"
+                  alt="color"
+                />
+                <input
+                  class="filter__input"
+                  min="1"
+                  max="10"
+                  value="8"
+                  type="range"
+                />
+              </div>
+              <div class="filter-toggles__contrast">
+                <img
+                  class="filter-toggles__img"
+                  src="images/contrast-filter.svg"
+                  alt="contrast"
+                />
+                <input
+                  class="filter__input"
+                  min="1"
+                  max="10"
+                  value="6"
+                  type="range"
+                />
+              </div>
+            </div>
           </div>
-          <div class="main-contentn__filter-toggles">
-            <div class="main-content-filter-toggles__crop">
-              <img src="images/crop-filter.svg" alt="crop" />
-            </div>
-            <div class="main-content-filter-toggles__color">
-              <img src="images/color-filter.svg" alt="color" />
-            </div>
-            <div class="main-content-filter-toggles__contrast">
-              <img src="images/contrast-filter.svg" alt="contrast" />
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
     <script
