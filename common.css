@@ -39,3 +39,18 @@
   margin-top: 120px;
   text-align: center;
 }
+/*Footer*/
+.footer__feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.footer__copyright-text {
+  float: left;
+  margin: auto 15px auto 0;
+}
+.footer__copyright-logo {
+  float: right;
+}
