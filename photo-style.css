@@ -195,3 +195,5 @@
   border: 3px solid #dddfe0;
   color: #dddfe0;
 }
+@media screen and (max-width: 768px) {
+}
