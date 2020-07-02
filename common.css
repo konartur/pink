@@ -83,3 +83,27 @@
     z-index: 2;
   }
 }
+@media screen and (max-width: 576px) {
+  /*  Footer */
+  .footer__title {
+    font-size: 24px;
+    margin: 30px auto;
+    width: 100%;
+  }
+  .footer__phone {
+    text-align: center;
+  }
+  .footer__phone:first-child {
+    order: 1;
+  }
+  .footer__phone:last-child {
+    order: 3;
+  }
+  .footer__map {
+    clip-path: polygon(50% 18%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+  .footer__feedback {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

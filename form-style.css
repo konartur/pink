@@ -484,20 +484,5 @@ input[placeholder]::-webkit-input-placeholder {
       justify-content: center;
       margin-top: 30px;
     }
-    /* Footer */
-    .footer__feedback {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .footer__copyright {
-      display: inherit;
-      justify-content: center;
-    }
-    .footer__copyright-text,
-    .footer__copyright-logo {
-      float: none;
-    }
   }
 }

@@ -555,13 +555,31 @@
         </h4>
         <form class="filter">
           <div class="filter__wrapper row">
-            <div class="filter__photo col-md-6">
+            <div class="filter__photo col-12 col-md-6">
               <img src="images/filter-photo.jpg" alt="photo" />
             </div>
-            <div class="filter__toggles col-md-6">
+            <div class="filter-icon-hidden d-md-none">
+              <img
+                class="filter-toggles__img"
+                src="images/crop-filter.svg"
+                alt="crop"
+              />
+              <img
+                class="filter-toggles__img"
+                src="images/color-filter.svg"
+                alt="color"
+              />
+              <img
+                class="filter-toggles__img"
+                src="images/contrast-filter.svg"
+                alt="contrast"
+              />
+            </div>
+
+            <div class="filter__toggles col-12 col-md-6">
               <div class="filter-toggles__crop">
                 <img
-                  class="filter-toggles__img"
+                  class="filter-toggles__img d-none d-md-block"
                   src="images/crop-filter.svg"
                   alt="crop"
                 />
@@ -573,23 +591,23 @@
                   type="range"
                 />
               </div>
-              <div class="filter-toggles__color">
+              <div class="filter-toggles__color d-none d-md-flex">
                 <img
-                  class="filter-toggles__img"
+                  class="filter-toggles__img d-none d-md-block"
                   src="images/color-filter.svg"
                   alt="color"
                 />
                 <input
-                  class="filter__input"
+                  class="filter__input d-none"
                   min="1"
                   max="10"
                   value="8"
                   type="range"
                 />
               </div>
-              <div class="filter-toggles__contrast">
+              <div class="filter-toggles__contrast d-none d-md-flex">
                 <img
-                  class="filter-toggles__img"
+                  class="filter-toggles__img d-none d-md-block"
                   src="images/contrast-filter.svg"
                   alt="contrast"
                 />
