@@ -1,9 +1,4 @@
 /* Header */
-.header {
-  background-image: url("images/header_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .navbar-brand {
   background-image: url("images/logo.svg");
@@ -291,8 +286,6 @@ input[placeholder]::-webkit-input-placeholder {
   }
 }
 @media screen and (max-width: 768px) {
-  /*Navbar*/
-
   /*Header*/
   .header__title {
     padding: 35px 0 50px 0;

@@ -23,11 +23,6 @@ body {
   text-align: center;
 }
 
-.header {
-  position: relative;
-  height: 100vh;
-}
-
 .header-phone {
   position: absolute;
   bottom: 0;
