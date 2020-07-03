@@ -80,10 +80,15 @@
     left: 0;
     right: 0;
     background-color: #283645;
+    transition: 0.2s linear;
     z-index: 2;
   }
 }
 @media screen and (max-width: 576px) {
+  /*Nav bar*/
+  .nav-link {
+    padding: 0.6rem 1rem;
+  }
   /*  Footer */
   .footer__title {
     font-size: 24px;
