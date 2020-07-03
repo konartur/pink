@@ -3,8 +3,7 @@
 # System Files
 .DS_Store
 .preview/makets
-<<<<<<< HEAD
-=======
+
 Thumbs.db
 
 # IDEs and editors
@@ -22,4 +21,4 @@ Thumbs.db
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
->>>>>>> e36c5b2288ad15116a1b1b3a5fd1f6dad284bcea
+
