@@ -1,16 +1,5 @@
 /* Header */
-.header {
-  background-image: url("images/header_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.navbar {
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 35px;
-  background: rgba(0, 0, 0, 0.3);
-}
 .navbar-brand {
   background-image: url("images/logo.svg");
   background-repeat: no-repeat;
@@ -219,10 +208,10 @@ input[placeholder]::-webkit-input-placeholder {
 }
 .fieldset__textarea {
   border: 2px solid #e5e5e5;
-  margin: 30px 60px;
+  margin: 30px 40px;
   padding: 20px;
   resize: none;
-  width: calc(100% - 120px);
+  width: calc(100% - 80px);
 }
 /* Main-content button */
 .main-content-button {
@@ -271,13 +260,6 @@ input[placeholder]::-webkit-input-placeholder {
   padding-right: 0;
 }
 
-.footer__feedback {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 200px;
-}
-
 .footer__copyright-text {
   float: left;
   margin: auto 15px auto 0;
@@ -304,8 +286,6 @@ input[placeholder]::-webkit-input-placeholder {
   }
 }
 @media screen and (max-width: 768px) {
-  /*Navbar*/
-
   /*Header*/
   .header__title {
     padding: 35px 0 50px 0;

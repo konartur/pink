@@ -224,6 +224,17 @@
   .filter-toggles__contrast {
     margin-bottom: 0;
   }
+  .filter__toggles {
+    margin: 40px 0;
+  }
+  .filter__photo img {
+    width: 100%;
+  }
+  .filter-icon-hidden {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
   .filter__buttons {
     flex-direction: column;
     align-items: center;
@@ -299,17 +310,7 @@
     font-weight: bold;
   }
   /*Filter*/
-  .filter__toggles {
-    margin: 40px 0;
-  }
-  .filter__photo img {
-    width: 100%;
-  }
-  .filter-icon-hidden {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+
   .filter-toggles__img {
     width: 25%;
   }
