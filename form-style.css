@@ -265,13 +265,6 @@ input[placeholder]::-webkit-input-placeholder {
   padding-right: 0;
 }
 
-.footer__feedback {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 200px;
-}
-
 .footer__copyright-text {
   float: left;
   margin: auto 15px auto 0;
