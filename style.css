@@ -2,6 +2,10 @@ html,
 body {
   height: 100%;
 }
+/*Header*/
+.header {
+  position: relative;
+}
 
 .header-content .header-content__btn {
   width: 100%;
